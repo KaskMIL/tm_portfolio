@@ -2,50 +2,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap');
 
 /* Universal Box Sizing with Inheritance */
+
 html {
   box-sizing: border-box;
-  /* 1rem = 10px */
+
+/* 1rem = 10px */
+
   font-size: 62.5%;
   }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
   }
+
 /* Colors */
-:root{
+
+:root {
+
   /* Font colors */
-  --logo-color: #FFFFFF;
-  --main-title: #FF6B00;
-  --main-subtitle: #FFF5E1;
-  --main-p: #FFFFFF;
-  --main-icons: #DBD8D7;
+  --logo-color: #ffffff;
+  --main-title: #ff6b00;
+  --main-subtitle: #fff5e1;
+  --main-p: #ffffff;
+  --main-icons: #dBd8d7;
+
   /* background colors */
-  --header-background: #3C3A39;
-  --main-background: #1C1A19;
+  --header-background: #3c3a39;
+  --main-background: #1c1a19;
 }
 
 /* Applying fonts */
 
-h1, h3{
+h1, h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-h2{
+h2 {
   font-family: 'Crete Round', serif;
   margin: 0;
 }
 
-p{
+p {
   font-family: 'Poppins', sans-serif;
 }
 
 /* Start styling */
 
-body{
+body {
   margin: 0;
    
 }
 
-header{
+header {
   display: flex;
   background-color: var(--header-background);
   color: var(--logo-color);
@@ -54,49 +63,51 @@ header{
   padding: 0 2rem;
 }
 
-h1, header nav i{
+h1,
+header nav i {
   font-size: 1.8rem;
 }
 
-main{
+main {
   position: relative;
   background-color: var(--main-background);
   padding: 10rem 2rem;
 }
 
-main h2{
+main h2 {
   color: #FF6B00;
   font-size: 5.6rem;
 }
 
-main h3{
+main h3 {
   color: var(--main-subtitle);
   font-size: 2.4rem;
 }
 
-main p{
+main p {
   color: var(--main-p);
   font-size: 1.6rem;
 }
 
-.social-icons{
+.social-icons {
   display: flex;
   justify-content: space-around;
   width: 70%;
 }
 
-.social-icons i, .social-icons img{
+.social-icons i,
+.social-icons img {
   color: var(--main-icons);
   font-size: 3rem;
 }
 
-.img-deco{
+.img-deco {
   position: absolute;
   bottom: 0;
   right: 0;
 }
 
-.img-deco img{
+.img-deco img {
   width: 100px;
   height: auto;
 }
