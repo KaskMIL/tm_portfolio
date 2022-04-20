@@ -6,26 +6,27 @@
 html {
   box-sizing: border-box;
 
-/* 1rem = 10px */
+  /* 1rem = 10px */
 
   font-size: 62.5%;
-  }
+}
 *,
-*:before,
-*:after {
+* :before,
+* :after {
   box-sizing: inherit;
-  }
+}
 
 /* Colors */
 
 :root {
 
-  /* Font colors */
-  --logo-color: #ffffff;
+/* Font colors */
+
+  --logo-color: #fff;
   --main-title: #ff6b00;
   --main-subtitle: #fff5e1;
-  --main-p: #ffffff;
-  --main-icons: #dBd8d7;
+  --main-p: #fff;
+  --main-icons: ##dbd8d7;
 
   /* background colors */
   --header-background: #3c3a39;
@@ -34,7 +35,8 @@ html {
 
 /* Applying fonts */
 
-h1, h3 {
+h1,
+h3 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -51,7 +53,6 @@ p {
 
 body {
   margin: 0;
-   
 }
 
 header {
@@ -75,7 +76,7 @@ main {
 }
 
 main h2 {
-  color: #FF6B00;
+  color: #ff6b00;
   font-size: 5.6rem;
 }
 
