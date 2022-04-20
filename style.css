@@ -10,9 +10,10 @@ html {
 
   font-size: 62.5%;
 }
+
 *,
-* :before,
-* :after {
+* ::before,
+* ::after {
   box-sizing: inherit;
 }
 
@@ -20,8 +21,7 @@ html {
 
 :root {
 
-/* Font colors */
-
+  /* Font colors */
   --logo-color: #fff;
   --main-title: #ff6b00;
   --main-subtitle: #fff5e1;
