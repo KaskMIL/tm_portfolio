@@ -1,0 +1,27 @@
+{
+  "name": "tm_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaskMIL/tm_portfolio.git"
+  },
+  "author": "Tom Milanesi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaskMIL/tm_portfolio/issues"
+  },
+  "homepage": "https://github.com/KaskMIL/tm_portfolio#readme",
+  "devDependencies": {
+    "sass": "^1.50.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0"
+  }
+}
