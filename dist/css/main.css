@@ -128,4 +128,105 @@ main .intro-section ul li a:link {
 main .intro-section ul li a:visited {
   text-decoration: none;
 }
+
+main .work-section {
+  padding: 10rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 125px 1fr (386px)[5];
+      grid-template-rows: 125px 1fr repeat(5, 386px);
+  row-gap: 3rem;
+}
+
+main .work-section .subtitle {
+  text-align: center;
+  font-family: 'Crete Round', serif;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+main .work-section .card-bg {
+  background-image: url(/../images/imgProj2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--logo-color);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .work-section .card-bg p {
+  margin-bottom: 0;
+}
+
+main .work-section .card-bg .padding-card {
+  padding: 0 2rem;
+}
+
+main .work-section .card-bg ul li {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-right: auto;
+}
+
+main .work-section .card-bg .fullWidth-btn {
+  padding: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: var(--main-title);
+  border: none;
+}
+
+main .work-section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .work-section .card h3 {
+  font-family: 'Crete Round', serif;
+  font-size: 3.2rem;
+  margin-bottom: 0;
+}
+
+main .work-section .card p {
+  font-size: 1.6rem;
+}
+
+main .work-section .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .work-section .card ul li {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+main .work-section .card .first-btn {
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 45%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: var(--main-title);
+  border: none;
+}
 /*# sourceMappingURL=main.css.map */
