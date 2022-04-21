@@ -229,4 +229,41 @@ main .work-section .card .first-btn {
   background-color: var(--main-title);
   border: none;
 }
+
+main .about-me {
+  padding: 10rem 2rem;
+  background-color: var(--main-background);
+  color: var(--logo-color);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 2fr 3fr;
+      grid-template-rows: 2fr 3fr;
+}
+
+main .about-me .intro-about {
+  background-image: url(/../images/GroupAbout.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding-bottom: 20rem;
+}
+
+main .about-me .intro-about h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 7.2rem;
+  color: var(--main-title);
+  margin: 0;
+}
+
+main .about-me .intro-about p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+main .about-me .intro-about button {
+  padding: 1rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--logo-color);
+  background-color: var(--main-title);
+}
 /*# sourceMappingURL=main.css.map */
