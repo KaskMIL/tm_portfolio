@@ -73,6 +73,22 @@ header .logo {
   font-size: 1.8rem;
 }
 
+main a:link {
+  text-decoration: none;
+}
+
+main a:visited {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main a:active {
+  text-decoration: underline;
+}
+
 main .intro-section {
   position: relative;
   background-color: var(--main-background);
@@ -138,7 +154,7 @@ main .work-section {
   row-gap: 3rem;
 }
 
-main .work-section .subtitle {
+main .work-section h2 {
   text-align: center;
   font-family: 'Crete Round', serif;
   font-size: 4rem;
@@ -160,7 +176,12 @@ main .work-section .card-bg p {
   margin-bottom: 0;
 }
 
-main .work-section .card-bg .padding-card {
+main .work-section .card-bg h3,
+main .work-section .card-bg p {
+  padding: 0 2rem;
+}
+
+main .work-section .card-bg ul {
   padding: 0 2rem;
 }
 
@@ -178,6 +199,7 @@ main .work-section .card-bg .fullWidth-btn {
   font-size: 1.7rem;
   background-color: var(--main-title);
   border: none;
+  text-align: center;
 }
 
 main .work-section .card {
@@ -221,13 +243,19 @@ main .work-section .card ul li {
 
 main .work-section .card .first-btn {
   margin-top: 2rem;
-  padding: 1rem;
-  width: 45%;
+  text-align: center;
+  padding: 1rem 0;
+  text-decoration: none;
+  width: 40%;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   font-size: 1.7rem;
   background-color: var(--main-title);
   border: none;
+}
+
+main .work-section a {
+  color: var(--logo-color);
 }
 
 main .about-me {
@@ -259,12 +287,14 @@ main .about-me .intro-about p {
   line-height: 2.4rem;
 }
 
-main .about-me .intro-about button {
+main .about-me .intro-about a {
   padding: 1rem;
+  margin: 1.5rem 0 0 0;
   font-size: 1.7rem;
   font-weight: bold;
   color: var(--logo-color);
   background-color: var(--main-title);
+  font-family: 'Poppins', sans-serif;
 }
 
 main .about-me .knowldege {
