@@ -22,19 +22,19 @@ html {
   --main-title: #ff6b00;
   --main-subtitle: #fff5e1;
   --main-p: #fff;
-  --main-icons: ##dbd8d7;
+  --main-icons: #dbd8d7;
   /* background colors */
   --header-background: #3c3a39;
   --main-background: #1c1a19;
 }
 
 /* Applying fonts */
-h1,
+.logo,
 h3 {
   font-family: 'Roboto', sans-serif;
 }
 
-h2 {
+h1 {
   font-family: 'Crete Round', serif;
   margin: 0;
 }
@@ -60,58 +60,72 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 2rem;
+  padding: 3rem 2rem;
 }
 
-header h1,
 header i {
+  font-size: 2rem;
+}
+
+header .logo {
+  text-decoration: none;
+  color: var(--logo-color);
   font-size: 1.8rem;
 }
 
-main {
+main .intro-section {
   position: relative;
   background-color: var(--main-background);
   padding: 10rem 2rem;
+  background-image: url(/../images/deco-main-section.svg);
+  background-repeat: no-repeat;
+  background-size: 100px auto;
+  background-position: 100% 100%;
 }
 
-main h2 {
+main .intro-section h1 {
   color: var(--main-title);
   font-size: 5.6rem;
 }
 
-main h3 {
+main .intro-section h3 {
   color: var(--main-subtitle);
   font-size: 2.4rem;
 }
 
-main p {
+main .intro-section p {
   color: var(--main-p);
   font-size: 1.6rem;
 }
 
-main .main-icons {
+main .intro-section ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 70%;
+  font-size: 2.4rem;
+  color: var(--main-icons);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-main .main-icons i,
-main .main-icons img {
-  color: var(#dbd8d7);
-  font-size: 3rem;
+main .intro-section ul li {
+  text-decoration: none;
 }
 
-main .img-deco {
-  position: absolute;
-  bottom: 0;
-  right: 0;
+main .intro-section ul li a {
+  text-decoration: none;
+  color: var(--main-icons);
 }
 
-main .img-deco img {
-  width: 100px;
-  height: auto;
+main .intro-section ul li a:link {
+  text-decoration: none;
+}
+
+main .intro-section ul li a:visited {
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
