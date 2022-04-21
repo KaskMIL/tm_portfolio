@@ -1,0 +1,117 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+/* Universal Box Sizing with Inheritance */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1rem = 10px */
+  font-size: 62.5%;
+}
+
+*,
+* ::before,
+* ::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Colors */
+:root {
+  /* Font colors */
+  --logo-color: #fff;
+  --main-title: #ff6b00;
+  --main-subtitle: #fff5e1;
+  --main-p: #fff;
+  --main-icons: ##dbd8d7;
+  /* background colors */
+  --header-background: #3c3a39;
+  --main-background: #1c1a19;
+}
+
+/* Applying fonts */
+h1,
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+  font-family: 'Crete Round', serif;
+  margin: 0;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Start styling */
+body {
+  margin: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--header-background);
+  color: var(--logo-color);
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 2rem;
+}
+
+header h1,
+header i {
+  font-size: 1.8rem;
+}
+
+main {
+  position: relative;
+  background-color: var(--main-background);
+  padding: 10rem 2rem;
+}
+
+main h2 {
+  color: var(--main-title);
+  font-size: 5.6rem;
+}
+
+main h3 {
+  color: var(--main-subtitle);
+  font-size: 2.4rem;
+}
+
+main p {
+  color: var(--main-p);
+  font-size: 1.6rem;
+}
+
+main .main-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70%;
+}
+
+main .main-icons i,
+main .main-icons img {
+  color: var(#dbd8d7);
+  font-size: 3rem;
+}
+
+main .img-deco {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+main .img-deco img {
+  width: 100px;
+  height: auto;
+}
+/*# sourceMappingURL=main.css.map */

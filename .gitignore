@@ -1,0 +1,8 @@
+#Ignore node_modules
+node_modules
+#sass
+sass
+#Ignore DS_store
+.DS_store
+#vscode
+.vscode
