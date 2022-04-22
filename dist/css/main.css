@@ -187,7 +187,7 @@ main .work-section .card-bg {
 }
 
 main .work-section .card-bg p {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
   font-family: 'Inter', sans-serif;
 }
 
@@ -236,15 +236,16 @@ main .work-section .card h3 {
 main .work-section .card p {
   font-size: 1.6rem;
   font-family: 'Inter', sans-serif;
+  padding-right: 1.4rem;
 }
 
 main .work-section .card ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -252,6 +253,7 @@ main .work-section .card ul {
 
 main .work-section .card ul li {
   font-size: 1.5rem;
+  margin-right: 2.5rem;
   font-family: 'Inter', sans-serif;
   padding: 1rem;
   border: 0.1rem solid black;
