@@ -1,5 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 /* Universal Box Sizing with Inheritance */
 html {
   -webkit-box-sizing: border-box;
@@ -73,6 +74,22 @@ header .logo {
   font-size: 1.8rem;
 }
 
+main a:link {
+  text-decoration: none;
+}
+
+main a:visited {
+  text-decoration: none;
+}
+
+main a:hover {
+  text-decoration: underline;
+}
+
+main a:active {
+  text-decoration: underline;
+}
+
 main .intro-section {
   position: relative;
   background-color: var(--main-background);
@@ -127,5 +144,221 @@ main .intro-section ul li a:link {
 
 main .intro-section ul li a:visited {
   text-decoration: none;
+}
+
+main .work-section {
+  padding: 10rem 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50px 70px 1fr (386px)[5];
+      grid-template-rows: 50px 70px 1fr repeat(5, 386px);
+  row-gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .work-section .item-1 {
+  height: 100%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+main .work-section .item-1 img {
+  width: 100%;
+}
+
+main .work-section h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 4rem;
+  letter-spacing: 1.5px;
+  margin: 0;
+  padding: 0;
+}
+
+main .work-section .card-bg {
+  background-image: url(/../images/imgProj2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: var(--logo-color);
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .work-section .card-bg p {
+  margin-bottom: 0.5rem;
+  font-family: 'Inter', sans-serif;
+}
+
+main .work-section .card-bg h3,
+main .work-section .card-bg p {
+  padding: 0 2rem;
+}
+
+main .work-section .card-bg .padd {
+  padding: 0 2rem;
+}
+
+main .work-section .card-bg ul li {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-right: auto;
+}
+
+main .work-section .card-bg .fullWidth-btn {
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: var(--main-title);
+  border: none;
+  text-align: center;
+}
+
+main .work-section .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .work-section .card h3 {
+  font-family: 'Crete Round', serif;
+  font-size: 3.2rem;
+  margin-bottom: 0;
+}
+
+main .work-section .card p {
+  font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
+  padding-right: 1.4rem;
+}
+
+main .work-section .card ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .work-section .card ul li {
+  font-size: 1.5rem;
+  margin-right: 2.5rem;
+  font-family: 'Inter', sans-serif;
+  padding: 1rem;
+  border: 0.1rem solid black;
+}
+
+main .work-section .card .first-btn {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1rem 0;
+  text-decoration: none;
+  width: 40%;
+  font-family: 'Inter', sans-serif;
+  font-weight: bold;
+  font-size: 1.7rem;
+  background-color: var(--main-title);
+  border: none;
+}
+
+main .work-section a {
+  color: var(--logo-color);
+}
+
+main .about-me {
+  padding: 10rem 0;
+  background-color: var(--main-background);
+  color: var(--logo-color);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 2fr;
+      grid-template-rows: 1fr 2fr;
+}
+
+main .about-me .intro-about {
+  background-image: url(/../images/GroupAbout.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding-bottom: 20rem;
+}
+
+main .about-me .intro-about h2 {
+  font-family: 'Crete Round', serif;
+  font-size: 7.2rem;
+  color: var(--main-title);
+  margin: 0;
+  padding: 0 2rem;
+}
+
+main .about-me .intro-about p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 0 2rem;
+}
+
+main .about-me .intro-about a {
+  padding: 1rem;
+  margin: 1.5rem 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--logo-color);
+  background-color: var(--main-title);
+}
+
+main .about-me .intro-about .padd {
+  padding: 0 2rem;
+}
+
+main .about-me .knowldege {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  text-align: center;
+  padding: 10rem 0;
+  background-image: url(/../vectorsImg/Tertiary/Icons/horizontalLineWhite.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 50% 3%;
+}
+
+main .about-me .knowldege .item-2 {
+  color: var(--logo-color);
+}
+
+main .about-me .knowldege h3 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+main .about-me .knowldege ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .about-me .knowldege ul li {
+  font-size: 2rem;
+  font-family: 'Inter', sans-serif;
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */
