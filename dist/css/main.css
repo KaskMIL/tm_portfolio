@@ -1,5 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 /* Universal Box Sizing with Inheritance */
 html {
   -webkit-box-sizing: border-box;
@@ -149,15 +150,28 @@ main .work-section {
   padding: 10rem 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 125px 1fr (386px)[5];
-      grid-template-rows: 125px 1fr repeat(5, 386px);
+  -ms-grid-rows: 50px 70px 1fr (386px)[5];
+      grid-template-rows: 50px 70px 1fr repeat(5, 386px);
   row-gap: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .work-section .item-1 {
+  height: 100%;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+}
+
+main .work-section .item-1 img {
+  width: 100%;
 }
 
 main .work-section h2 {
-  text-align: center;
   font-family: 'Crete Round', serif;
   font-size: 4rem;
+  letter-spacing: 1.5px;
   margin: 0;
   padding: 0;
 }
@@ -174,6 +188,7 @@ main .work-section .card-bg {
 
 main .work-section .card-bg p {
   margin-bottom: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 main .work-section .card-bg h3,
@@ -194,7 +209,7 @@ main .work-section .card-bg ul li {
 
 main .work-section .card-bg .fullWidth-btn {
   padding: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 1.7rem;
   background-color: var(--main-title);
@@ -220,6 +235,7 @@ main .work-section .card h3 {
 
 main .work-section .card p {
   font-size: 1.6rem;
+  font-family: 'Inter', sans-serif;
 }
 
 main .work-section .card ul {
@@ -236,7 +252,7 @@ main .work-section .card ul {
 
 main .work-section .card ul li {
   font-size: 1.5rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   padding: 1rem;
   border: 0.1rem solid black;
 }
@@ -247,7 +263,7 @@ main .work-section .card .first-btn {
   padding: 1rem 0;
   text-decoration: none;
   width: 40%;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 1.7rem;
   background-color: var(--main-title);
@@ -259,7 +275,7 @@ main .work-section a {
 }
 
 main .about-me {
-  padding: 10rem 2rem;
+  padding: 10rem 0;
   background-color: var(--main-background);
   color: var(--logo-color);
   display: -ms-grid;
@@ -280,21 +296,29 @@ main .about-me .intro-about h2 {
   font-size: 7.2rem;
   color: var(--main-title);
   margin: 0;
+  padding: 0 2rem;
 }
 
 main .about-me .intro-about p {
   font-size: 1.6rem;
   line-height: 2.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  padding: 0 2rem;
 }
 
 main .about-me .intro-about a {
   padding: 1rem;
   margin: 1.5rem 0 0 0;
+  font-family: 'Inter', sans-serif;
   font-size: 1.7rem;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--logo-color);
   background-color: var(--main-title);
-  font-family: 'Poppins', sans-serif;
+}
+
+main .about-me .intro-about .padd {
+  padding: 0 2rem;
 }
 
 main .about-me .knowldege {
@@ -309,6 +333,14 @@ main .about-me .knowldege {
       align-content: stretch;
   text-align: center;
   padding: 10rem 0;
+  background-image: url(/../vectorsImg/Tertiary/Icons/horizontalLineWhite.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: 50% 3%;
+}
+
+main .about-me .knowldege .item-2 {
+  color: var(--logo-color);
 }
 
 main .about-me .knowldege h3 {
@@ -324,7 +356,7 @@ main .about-me .knowldege ul {
 
 main .about-me .knowldege ul li {
   font-size: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 1rem 0;
 }
 /*# sourceMappingURL=main.css.map */
