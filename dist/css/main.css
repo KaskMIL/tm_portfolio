@@ -27,6 +27,13 @@ html {
   --contact-title: #172b4d;
   --form-input: #979493;
   --footer-icons: #505f79;
+  --textarea-bg: #fbf8f7;
+  --hover-btn-bg: #fff5e1;
+  --disable-btn-bg: #f4f1f0;
+  --active-btn-bg: #e05304;
+  --active-btn-color: #f4f1f0;
+  --disable-btn-bg: #f4f1f0;
+  --disable-btn-color: #5b5957;
   /* background colors */
   --header-background: #3c3a39;
   --main-background: #1c1a19;
@@ -367,6 +374,13 @@ main .about-me .knowldege ul li {
 
 main .contact-section {
   padding: 10rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .contact-section h2 {
@@ -414,6 +428,7 @@ main .contact-section form ul li textarea {
   padding: 1rem;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
+  background-color: var(--textarea-bg);
 }
 
 main .contact-section form ul .btn-container {
@@ -435,8 +450,26 @@ main .contact-section form ul .btn-container button {
   padding: 2rem;
 }
 
+main .contact-section form ul button:disabled {
+  background-color: var(--disable-btn-bg);
+  color: var(--disable-btn-color);
+  cursor: not-allowed;
+}
+
+main .contact-section form ul .button:hover {
+  background-color: var(--hover-btn-bg);
+  color: var(--main-title);
+  border: 0.1rem solid var(--main-title);
+  padding: 1.9rem;
+  cursor: pointer;
+}
+
+main .contact-section form ul .button:active {
+  background-color: var(--active-btn-bg);
+  color: var(--active-btn-color);
+}
+
 footer {
-  background-color: var(--main-background);
   padding: 1rem 0;
 }
 
@@ -477,10 +510,10 @@ footer ul li {
 }
 
 footer ul li a i {
-  color: var(--main-icons);
+  color: var(--footer-icons);
 }
 
 footer ul li a img {
-  color: var(--main-icons);
+  color: var(--footer-icons);
 }
 /*# sourceMappingURL=main.css.map */
