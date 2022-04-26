@@ -24,7 +24,8 @@ html {
   --main-subtitle: #fff5e1;
   --main-p: #fff;
   --main-icons: #dbd8d7;
-  --contact--title: #172b4d;
+  --contact-title: #172b4d;
+  --form-input: #979493;
   /* background colors */
   --header-background: #3c3a39;
   --main-background: #1c1a19;
@@ -373,5 +374,64 @@ main .contact-section h2 {
   font-size: 3.2rem;
   font-weight: 700;
   text-align: center;
+  padding-bottom: 5rem;
+}
+
+main .contact-section form {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+main .contact-section form ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+main .contact-section form ul li {
+  margin-bottom: 2rem;
+}
+
+main .contact-section form ul li input {
+  width: 100%;
+  border: none;
+  border-bottom: 0.01rem solid #c3bdbc;
+  color: var(--form-input);
+  padding: 1rem;
+}
+
+main .contact-section form ul li textarea {
+  width: 100%;
+  height: 11.4rem;
+  border: none;
+  padding: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+main .contact-section form ul .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .contact-section form ul .btn-container button {
+  border: none;
+  background-color: var(--main-title);
+  color: var(--logo-color);
+  font-family: 'Inter', sans-serif;
+  font-size: 700;
+  font-size: 1.7rem;
+  padding: 2rem;
 }
 /*# sourceMappingURL=main.css.map */
