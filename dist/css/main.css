@@ -26,6 +26,7 @@ html {
   --main-icons: #dbd8d7;
   --contact-title: #172b4d;
   --form-input: #979493;
+  --footer-icons: #505f79;
   /* background colors */
   --header-background: #3c3a39;
   --main-background: #1c1a19;
@@ -433,5 +434,54 @@ main .contact-section form ul .btn-container button {
   font-size: 700;
   font-size: 1.7rem;
   padding: 2rem;
+}
+
+footer {
+  background-color: var(--main-background);
+  padding: 1rem 0;
+}
+
+footer a:link {
+  text-decoration: none;
+}
+
+footer a:visited {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  text-decoration: underline;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  margin: 1rem;
+}
+
+footer ul li a i {
+  color: var(--main-icons);
+}
+
+footer ul li a img {
+  color: var(--main-icons);
 }
 /*# sourceMappingURL=main.css.map */
