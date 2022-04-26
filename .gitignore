@@ -3,6 +3,6 @@ node_modules/
 #sass
 sass
 #Ignore DS_store
-.DS_Store
+.DS_Store/
 #vscode
 .vscode
