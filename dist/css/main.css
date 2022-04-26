@@ -404,7 +404,6 @@ main .contact-section form ul li input {
   width: 100%;
   border: none;
   border-bottom: 0.01rem solid #c3bdbc;
-  color: var(--form-input);
   padding: 1rem;
 }
 
