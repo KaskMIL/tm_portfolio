@@ -1,6 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 /* Universal Box Sizing with Inheritance */
 html {
   -webkit-box-sizing: border-box;
@@ -225,6 +225,20 @@ main .intro-section ul li a:visited {
     background-position: 100% 0%;
     background-size: 330px auto;
   }
+  main .intro-section h1 {
+    font-size: 7.2rem;
+  }
+  main .intro-section h3 {
+    font-size: 3.2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+  }
+  main .intro-section p {
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 3.2rem;
+  }
   main .intro-section ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -243,8 +257,8 @@ main .intro-section ul li a:visited {
     font-size: 1.8rem;
   }
   main .intro-section .intro-container {
-    -ms-flex-preferred-size: 400px;
-        flex-basis: 400px;
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
   }
 }
 
