@@ -1,6 +1,6 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 /* Universal Box Sizing with Inheritance */
 html {
   -webkit-box-sizing: border-box;
@@ -92,7 +92,7 @@ header .logo {
 
 @media screen and (min-width: 768px) {
   header {
-    padding: 3rem 10rem;
+    padding: 1rem 15rem;
   }
   header .mobile-header {
     display: none;
@@ -124,14 +124,14 @@ header .logo {
     list-style-type: none;
   }
   header ul li {
-    margin-left: 1rem;
+    margin-left: 3rem;
     text-decoration: none;
   }
   header ul li a {
     color: var(--logo-color);
     font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 1.5rem;
+    font-weight: 600;
+    font-size: 1.3rem;
   }
 }
 
@@ -152,7 +152,6 @@ main a:active {
 }
 
 main .intro-section {
-  position: relative;
   background-color: var(--main-background);
   padding: 10rem 2rem;
   background-image: url(/../images/deco-main-section.svg);
@@ -205,6 +204,55 @@ main .intro-section ul li a:link {
 
 main .intro-section ul li a:visited {
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  main .intro-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    background-image: url(/../images/intro-img-bg.svg);
+    background-position: 100% 0%;
+    background-size: 330px auto;
+  }
+  main .intro-section ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 100px;
+        flex-basis: 100px;
+  }
+  main .intro-section ul li {
+    margin: 1rem;
+  }
+  main .intro-section ul li a {
+    font-size: 1.8rem;
+  }
+  main .intro-section .intro-container {
+    -ms-flex-preferred-size: 400px;
+        flex-basis: 400px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  main .intro-section {
+    background-size: 450px auto;
+    background-position: 100% 90%;
+  }
 }
 
 main .work-section {
