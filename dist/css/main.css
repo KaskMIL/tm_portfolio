@@ -273,9 +273,9 @@ main .work-section {
   padding: 10rem 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 150px 1fr (386px)[5];
-      grid-template-rows: 150px 1fr repeat(5, 386px);
-  row-gap: 3rem;
+  -ms-grid-rows: 120px 1.3fr 2fr 2fr;
+      grid-template-rows: 120px 1.3fr 2fr 2fr;
+  row-gap: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -295,11 +295,11 @@ main .work-section .work-title {
 }
 
 main .work-section .work-title .img-container {
-  width: 100%;
+  width: 90%;
 }
 
 main .work-section .work-title .img-container img {
-  width: 90%;
+  width: 100%;
 }
 
 main .work-section h2 {
@@ -439,6 +439,9 @@ main .work-section a {
     width: 100%;
   }
   main .work-section .card-desktop {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -459,6 +462,15 @@ main .work-section a {
   }
   main .work-section .card-desktop .card-content a {
     padding: 1rem;
+  }
+  main .work-section .first-row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .work-section .first-row .card-bg-main {
+    background-image: url(/../images/card-bg-main.png);
   }
 }
 
