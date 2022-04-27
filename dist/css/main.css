@@ -383,6 +383,7 @@ main .work-section .card ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-bottom: 2rem;
 }
 
 main .work-section .card ul li {
@@ -396,7 +397,7 @@ main .work-section .card ul li {
 main .work-section .card .first-btn {
   margin-top: 2rem;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   text-decoration: none;
   width: 40%;
   font-family: 'Inter', sans-serif;
@@ -436,6 +437,28 @@ main .work-section a {
   }
   main .work-section .work-title .img-container img {
     width: 100%;
+  }
+  main .work-section .card-desktop {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  main .work-section .card-desktop img {
+    width: 100%;
+    height: auto;
+  }
+  main .work-section .card-desktop .card-content {
+    padding-left: 2rem;
+  }
+  main .work-section .card-desktop .card-content h3 {
+    margin: 1rem 0;
+  }
+  main .work-section .card-desktop .card-content ul {
+    margin-bottom: 3rem;
+  }
+  main .work-section .card-desktop .card-content a {
+    padding: 1rem;
   }
 }
 
