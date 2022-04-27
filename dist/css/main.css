@@ -81,7 +81,58 @@ header i {
 header .logo {
   text-decoration: none;
   color: var(--logo-color);
-  font-size: 1.8rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  header .desktop-nav {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 3rem 10rem;
+  }
+  header .mobile-header {
+    display: none;
+  }
+  header .logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  header a:link {
+    text-decoration: none;
+  }
+  header a:visited {
+    text-decoration: none;
+  }
+  header a:hover {
+    text-decoration: underline;
+  }
+  header a:active {
+    text-decoration: underline;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    list-style-type: none;
+  }
+  header ul li {
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  header ul li a {
+    color: var(--logo-color);
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
 }
 
 main a:link {
