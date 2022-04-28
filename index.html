@@ -15,22 +15,41 @@
         <a class="logo" href="#">Tomas Milanesi</a>
 
         <nav>
-            <i class="bi bi-list"></i>
+            <i class="bi bi-list mobile-header"></i>
+            <ul class="desktop-nav">
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="bi bi-envelope"></i>
+                    </a>
+                </li>
+            </ul>
         </nav>
     </header>
 
     <main>
         <section class="intro-section">
-            <h1>Hey There.<br>I'm Tom</h1>
+            <div class="intro-container">
+                <h1>Hey There.<br>I'm Tom</h1>
 
-            <h3>I am a Software Developer</h3>
+                <h3>I am a Software Developer</h3>
 
-            <p>
-                I can help you build a product , feature or website Look through some of my work and experience! If you
-                like
-                what you see and have a project you need coded,
-                don't hestiate to contact me.
-            </p>
+                <p>
+                    I can help you build a product , feature or website Look through some of my work and experience! If
+                    you
+                    like
+                    what you see and have a project you need coded,
+                    don't hestiate to contact me.
+                </p>
+            </div>
 
             <ul>
                 <li><a href="#"><i class="bi bi-github"></i></a></li>
@@ -43,112 +62,130 @@
         </section>
 
         <section class="work-section">
-            <h2>My Recent Works </h2>
-            <div class="item-1">
-                <img src="/vectorsImg/Tertiary/Icons/horizontalLine.svg" alt="">
-            </div>
+            <section class="work-title">
+                <h2>My Recent Works</h2>
+                <div class="img-container">
+                    <img src="../vectorsImg/Tertiary/Icons/horizontalLine.svg" alt="Horizontal line decoration">
+                </div>
+            </section>
 
-            <article class="card">
-                <img class="item-1" src="images/ImgProj.png" alt="Project image">
-                <h3>Multi-Post Stories</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy
-                    text.</p>
-                <ul>
-                    <li>css</li>
-                    <li>html</li>
-                    <li>Bootstrap</li>
-                    <li>Ruby</li>
-                </ul>
-                <a href="#" class="first-btn">See Project</a>
-            </article>
-
-            <article class="card card-bg">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <div class="padd">
+            <article class="card card-desktop">
+                <img src="images/ImgProj.png" alt="Project image">
+                <section class="card-content">
+                    <h3>Multi-Post Stories</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a standard
+                        dummy
+                        text.</p>
                     <ul>
+                        <li>css</li>
                         <li>html</li>
                         <li>Bootstrap</li>
                         <li>Ruby</li>
                     </ul>
-                </div>
-                <a href="#" class="fullWidth-btn">See Project</a>
+                    <a href="#" class="first-btn">See Project</a>
+                </section>
             </article>
 
-            <article class="card card-bg">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <div class="padd">
-                    <ul>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <a href="#" class="fullWidth-btn">See Project</a>
-            </article>
+                <article class="card card-bg card-bg-main">
+                    <h3>Profesional Art Printing Data</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <div class="padd">
+                        <ul>
+                            <li>html</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="fullWidth-btn">See Project</a>
+                </article>
 
-            <article class="card card-bg">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <div class="padd">
-                    <ul>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <a href="#" class="fullWidth-btn">See Project</a>
-            </article>
+                <article class="card card-bg card-bg-1">
+                    <h3>Data Dashboard Healthcare</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <div class="padd">
+                        <ul>
+                            <li>html</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="fullWidth-btn">See Project</a>
+                </article>
 
-            <article class="card card-bg">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <div class="padd">
-                    <ul>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <a href="#" class="fullWidth-btn">See Project</a>
-            </article>
+                <article class="card card-bg card-bg-2">
+                    <h3>Website Portfolio</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <div class="padd">
+                        <ul>
+                            <li>html</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="fullWidth-btn">See Project</a>
+                </article>
 
-            <article class="card card-bg">
-                <h3>Profesional Art Printing Data</h3>
-                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
-                    industry's standard</p>
-                <div class="padd">
-                    <ul>
-                        <li>html</li>
-                        <li>Bootstrap</li>
-                        <li>Ruby</li>
-                    </ul>
-                </div>
-                <a href="#" class="fullWidth-btn">See Project</a>
-            </article>
+                <article class="card card-bg card-bg-3">
+                    <h3>Profesional Art Printing Data</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <div class="padd">
+                        <ul>
+                            <li>html</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="fullWidth-btn">See Project</a>
+                </article>
+
+                <article class="card card-bg card-bg-4">
+                    <h3>Data Daschboard Healthcare</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <div class="padd">
+                        <ul>
+                            <li>html</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="fullWidth-btn">See Project</a>
+                </article>
+
+                <article class="card card-bg card-bg-5">
+                    <h3>Website Portfolio</h3>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the
+                        industry's standard</p>
+                    <div class="padd">
+                        <ul>
+                            <li>html</li>
+                            <li>Bootstrap</li>
+                            <li>Ruby</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="fullWidth-btn">See Project</a>
+                </article>
         </section>
 
         <section class="about-me">
             <article class="intro-about">
                 <h2>About me</h2>
-                <p>Hello I'm a software developer! I can help you build a product , feature or website Look through some
+                <p>Hello I'm a software developer! I can help you build a product , feature or website Look through
+                    some
                     of my work and experience! If you like what you see and have a project you need coded, don't
                     hestiate to contact me.</p>
-                    <div class="padd">
-                <a href="#">Get My Resume</a>
-            </div>
+                    <a href="#">Get My Resume</a>
             </article>
 
             <article class="knowldege">
-                
+
                 <section>
-                    <h3> <img src="/vectorsImg/Tertiary/Icons/Rectangle.svg" alt=""> Languages</h3>
+                    <h3> <img src="vectorsImg/Tertiary/Icons/Rectangle.svg" alt=""> Languages</h3>
                     <ul>
                         <li>Javascript</li>
                         <li>Ruby</li>
@@ -158,7 +195,7 @@
                 </section>
 
                 <section>
-                    <h3> <img src="/vectorsImg/Tertiary/Icons/RectangleNormal.svg" alt=""> Frameworks</h3>
+                    <h3> <img src="vectorsImg/Tertiary/Icons/RectangleNormal.svg" alt=""> Frameworks</h3>
                     <ul>
                         <li>Bootstrap</li>
                         <li>Ruby on Rails</li>
@@ -169,7 +206,7 @@
                 </section>
 
                 <section>
-                    <h3> <img src="/vectorsImg/Tertiary/Icons/circle.svg" alt=""> Skills</h3>
+                    <h3> <img src="vectorsImg/Tertiary/Icons/circle.svg" alt=""> Skills</h3>
                     <ul>
                         <li>Codekit</li>
                         <li>Github</li>
@@ -182,7 +219,8 @@
         </section>
 
         <section class="contact-section">
-            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
+            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>
 
             <form action="https://formspree.io/f/mqkngqpl" method="post">
                 <ul>
@@ -193,7 +231,8 @@
                         <input type="email" id="mail" name="user_email" placeholder="Email address" required>
                     </li>
                     <li>
-                        <textarea name="user_msg" id="msg" maxlength="500" placeholder="Enter text here" required></textarea>
+                        <textarea name="user_msg" id="msg" maxlength="500" placeholder="Enter text here"
+                            required></textarea>
                     </li>
                     <li class="btn-container">
                         <button class="button" type="submit">Get in touch</button>
