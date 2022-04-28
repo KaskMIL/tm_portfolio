@@ -154,7 +154,7 @@ main a:active {
 main .intro-section {
   background-color: var(--main-background);
   padding: 10rem 2rem;
-  background-image: url(/../images/deco-main-section.svg);
+  background-image: url(../../images/deco-main-section.svg);
   background-repeat: no-repeat;
   background-size: 100px auto;
   background-position: 100% 100%;
@@ -221,7 +221,7 @@ main .intro-section ul li a:visited {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    background-image: url(/../images/intro-img-bg.svg);
+    background-image: url(../../images/intro-img-bg.svg);
     background-position: 100% 0%;
     background-size: 350px auto;
   }
@@ -312,7 +312,7 @@ main .work-section h2 {
 
 main .work-section .card-bg {
   min-height: 386px;
-  background-image: url(/../images/imgProj2.png);
+  background-image: url(../../images/imgProj2.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: var(--logo-color);
@@ -489,7 +489,7 @@ main .work-section a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    background-image: url(/../images/card-bg-main.png);
+    background-image: url(../../images/card-bg-main.png);
     background-repeat: none;
     background-size: cover;
   }
@@ -572,7 +572,7 @@ main .about-me {
 }
 
 main .about-me .intro-about {
-  background-image: url(/../images/GroupAbout.svg);
+  background-image: url(../../images/GroupAbout.svg);
   background-repeat: no-repeat;
   background-position: 100% 100%;
   padding-bottom: 20rem;
@@ -617,7 +617,7 @@ main .about-me .knowldege {
       align-content: stretch;
   text-align: center;
   padding: 10rem 0;
-  background-image: url(/../vectorsImg/Tertiary/Icons/horizontalLineWhite.svg);
+  background-image: url(../../vectorsImg/Tertiary/Icons/horizontalLineWhite.svg);
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: 50% 3%;
@@ -656,7 +656,7 @@ main .about-me .knowldege ul li {
             flex-direction: column;
   }
   main .about-me .intro-about {
-    background-image: url(/../images/about-desktop-bg.svg);
+    background-image: url(../../images/about-desktop-bg.svg);
     background-position: 100% 0%;
     background-size: 40% auto;
     -ms-flex-item-align: center;
