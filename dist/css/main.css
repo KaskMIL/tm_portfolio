@@ -273,8 +273,8 @@ main .work-section {
   padding: 10rem 2rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 120px 1.3fr 2fr 2fr;
-      grid-template-rows: 120px 1.3fr 2fr 2fr;
+  -ms-grid-rows: 120px 1.3fr (1fr)[6];
+      grid-template-rows: 120px 1.3fr repeat(6, 1fr);
   row-gap: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -311,6 +311,7 @@ main .work-section h2 {
 }
 
 main .work-section .card-bg {
+  min-height: 386px;
   background-image: url(/../images/imgProj2.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -411,13 +412,23 @@ main .work-section a {
   color: var(--logo-color);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 980px) {
   main .work-section {
-    padding: 10rem;
-    -ms-grid-rows: 150px 2fr 1fr 1fr;
-        grid-template-rows: 150px 2fr 1fr 1fr;
+    padding: 10rem 5rem;
+    -ms-grid-rows: 150px 2fr (2fr)[2];
+        grid-template-rows: 150px 2fr repeat(2, 2fr);
+    -ms-grid-columns: 0.5fr 0.5fr 0.5fr;
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    -webkit-column-gap: 2rem;
+            column-gap: 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main .work-section .work-title {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -429,6 +440,7 @@ main .work-section a {
   }
   main .work-section .work-title h2 {
     margin-right: 2rem;
+    font-size: 4rem;
   }
   main .work-section .work-title .img-container {
     -webkit-box-flex: 1;
@@ -442,6 +454,9 @@ main .work-section a {
     -ms-grid-row: 2;
     -ms-grid-row-span: 1;
     grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-column: 1/4;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
@@ -456,6 +471,10 @@ main .work-section a {
   }
   main .work-section .card-desktop .card-content h3 {
     margin: 1rem 0;
+    font-size: 4rem;
+  }
+  main .work-section .card-desktop .card-content p {
+    font-size: 2rem;
   }
   main .work-section .card-desktop .card-content ul {
     margin-bottom: 3rem;
@@ -463,14 +482,82 @@ main .work-section a {
   main .work-section .card-desktop .card-content a {
     padding: 1rem;
   }
-  main .work-section .first-row {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-  }
-  main .work-section .first-row .card-bg-main {
+  main .work-section .card-bg-main {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
     background-image: url(/../images/card-bg-main.png);
+    background-repeat: none;
+    background-size: cover;
+  }
+  main .work-section .card-bg-main h3,
+  main .work-section .card-bg-main p,
+  main .work-section .card-bg-main .padd {
+    display: none;
+  }
+  main .work-section .card-bg-main .fullWidth-btn {
+    background-color: var(--active-btn-bg);
+  }
+  main .work-section .card-bg .padd ul {
+    margin: 1rem 0;
+  }
+  main .work-section .card-bg-1 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  main .work-section .card-bg-1 a {
+    display: none;
+  }
+  main .work-section .card-bg-2 {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  main .work-section .card-bg-2 a {
+    display: none;
+  }
+  main .work-section .card-bg-3 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  main .work-section .card-bg-3 a {
+    display: none;
+  }
+  main .work-section .card-bg-4 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  main .work-section .card-bg-4 a {
+    display: none;
+  }
+  main .work-section .card-bg-5 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  main .work-section .card-bg-5 a {
+    display: none;
   }
 }
 
@@ -505,20 +592,17 @@ main .about-me .intro-about p {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   padding: 0 2rem;
+  margin-bottom: 5rem;
 }
 
 main .about-me .intro-about a {
   padding: 1rem;
-  margin: 1.5rem 0 0 0;
+  margin: 2rem;
   font-family: 'Inter', sans-serif;
   font-size: 1.7rem;
   font-weight: 700;
   color: var(--logo-color);
   background-color: var(--main-title);
-}
-
-main .about-me .intro-about .padd {
-  padding: 0 2rem;
 }
 
 main .about-me .knowldege {
@@ -558,6 +642,23 @@ main .about-me .knowldege ul li {
   font-size: 2rem;
   font-family: 'Inter', sans-serif;
   margin: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  main .about-me {
+    padding-left: 10rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .about-me .intro-about {
+    -ms-flex-preferred-size: 500px;
+        flex-basis: 500px;
+  }
 }
 
 main .contact-section {
