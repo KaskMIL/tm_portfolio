@@ -646,7 +646,7 @@ main .about-me .knowldege ul li {
 
 @media screen and (min-width: 768px) {
   main .about-me {
-    padding-left: 10rem;
+    padding: 10rem 0 5rem 10rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -656,8 +656,40 @@ main .about-me .knowldege ul li {
             flex-direction: column;
   }
   main .about-me .intro-about {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
+    background-image: url(/../images/about-desktop-bg.svg);
+    background-position: 100% 0%;
+    background-size: 40% auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  main .about-me .intro-about p {
+    width: 50%;
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  main .about-me .knowldege {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-position: 0% 0%;
+    padding: 10rem 0 5rem 0;
+  }
+  main .about-me .knowldege section {
+    margin-right: 15rem;
+    padding-right: 5rem;
+    text-align: left;
+  }
+  main .about-me .knowldege section h3 {
+    margin-bottom: 5rem;
+  }
+  main .about-me .knowldege section li {
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
   }
 }
 
@@ -758,6 +790,35 @@ main .contact-section form ul .button:active {
   color: var(--active-btn-color);
 }
 
+@media screen and (min-width: 768px) {
+  main .contact-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 10rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main .contact-section h2 {
+    -ms-flex-preferred-size: 42.5%;
+        flex-basis: 42.5%;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+  main .contact-section form {
+    -ms-flex-preferred-size: 57.5%;
+        flex-basis: 57.5%;
+  }
+  main .contact-section form ul .btn-container {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
 footer {
   padding: 1rem 0;
 }
@@ -814,5 +875,14 @@ footer ul li a i {
 
 footer ul li a img {
   color: var(--footer-icons);
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    border-top: 0.1rem solid black;
+  }
+  footer .img-bar-container {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
