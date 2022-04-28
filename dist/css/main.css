@@ -645,23 +645,13 @@ main .about-me .knowldege ul li {
 }
 
 @media screen and (min-width: 768px) {
-  main .about-me {
-    padding-left: 10rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
   main .about-me .intro-about {
-    -ms-flex-preferred-size: 500px;
-        flex-basis: 500px;
+    background-image: url(/../images/about-desktop-bg.svg);
+    background-position: 100% 30%;
   }
 }
 
-main .contact-section {
+main .about-me .contact-section {
   padding: 10rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,7 +662,7 @@ main .contact-section {
           flex-direction: column;
 }
 
-main .contact-section h2 {
+main .about-me .contact-section h2 {
   color: var(--contact--title);
   font-family: 'Inter', sans-serif;
   font-size: 3.2rem;
@@ -681,12 +671,12 @@ main .contact-section h2 {
   padding-bottom: 5rem;
 }
 
-main .contact-section form {
+main .about-me .contact-section form {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
 
-main .contact-section form ul {
+main .about-me .contact-section form ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -699,18 +689,18 @@ main .contact-section form ul {
   padding: 0;
 }
 
-main .contact-section form ul li {
+main .about-me .contact-section form ul li {
   margin-bottom: 2rem;
 }
 
-main .contact-section form ul li input {
+main .about-me .contact-section form ul li input {
   width: 100%;
   border: none;
   border-bottom: 0.01rem solid #c3bdbc;
   padding: 1rem;
 }
 
-main .contact-section form ul li textarea {
+main .about-me .contact-section form ul li textarea {
   width: 100%;
   height: 11.4rem;
   border: none;
@@ -720,7 +710,7 @@ main .contact-section form ul li textarea {
   background-color: var(--textarea-bg);
 }
 
-main .contact-section form ul .btn-container {
+main .about-me .contact-section form ul .btn-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -729,7 +719,7 @@ main .contact-section form ul .btn-container {
           justify-content: center;
 }
 
-main .contact-section form ul .btn-container button {
+main .about-me .contact-section form ul .btn-container button {
   border: none;
   background-color: var(--main-title);
   color: var(--logo-color);
@@ -739,13 +729,13 @@ main .contact-section form ul .btn-container button {
   padding: 2rem;
 }
 
-main .contact-section form ul button:disabled {
+main .about-me .contact-section form ul button:disabled {
   background-color: var(--disable-btn-bg);
   color: var(--disable-btn-color);
   cursor: not-allowed;
 }
 
-main .contact-section form ul .button:hover {
+main .about-me .contact-section form ul .button:hover {
   background-color: var(--hover-btn-bg);
   color: var(--main-title);
   border: 0.1rem solid var(--main-title);
@@ -753,16 +743,16 @@ main .contact-section form ul .button:hover {
   cursor: pointer;
 }
 
-main .contact-section form ul .button:active {
+main .about-me .contact-section form ul .button:active {
   background-color: var(--active-btn-bg);
   color: var(--active-btn-color);
 }
 
-footer {
+main footer {
   padding: 1rem 0;
 }
 
-footer .img-bar-container {
+main footer .img-bar-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,23 +762,23 @@ footer .img-bar-container {
   padding: 1rem 0 0 0;
 }
 
-footer a:link {
+main footer a:link {
   text-decoration: none;
 }
 
-footer a:visited {
+main footer a:visited {
   text-decoration: none;
 }
 
-footer a:hover {
+main footer a:hover {
   text-decoration: underline;
 }
 
-footer a:active {
+main footer a:active {
   text-decoration: underline;
 }
 
-footer ul {
+main footer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -804,15 +794,15 @@ footer ul {
   padding: 0;
 }
 
-footer ul li {
+main footer ul li {
   margin: 1rem;
 }
 
-footer ul li a i {
+main footer ul li a i {
   color: var(--footer-icons);
 }
 
-footer ul li a img {
+main footer ul li a img {
   color: var(--footer-icons);
 }
 /*# sourceMappingURL=main.css.map */
