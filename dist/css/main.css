@@ -893,5 +893,15 @@ footer ul li a img {
   footer .img-bar-container {
     display: none;
   }
+
+  footer i,
+  footer img {
+    transition: transform .5s;
+  }
+
+  footer li:hover {
+    transform: rotate(180deg);
+  }
+
 }
 /*# sourceMappingURL=main.css.map */
