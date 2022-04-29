@@ -893,15 +893,15 @@ footer ul li a img {
   footer .img-bar-container {
     display: none;
   }
-
-  footer i,
-  footer img {
-    transition: transform .5s;
+  footer ul li a, footer ul li img {
+    -webkit-transition: -webkit-transform 1.5s;
+    transition: -webkit-transform 1.5s;
+    transition: transform 1.5s;
+    transition: transform 1.5s, -webkit-transform 1.5s;
   }
-
-  footer li:hover {
-    transform: rotate(180deg);
+  footer ul li:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
   }
-
 }
 /*# sourceMappingURL=main.css.map */
