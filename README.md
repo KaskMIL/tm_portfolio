@@ -21,7 +21,7 @@ Not available yet.
 👤 **Tomas Milanesi**
 
 - GitHub: [@TomMilanesi](https://github.com/KaskMIL)
-- Twitter: [@tTomasMilanesi](https://twitter.com/TomasMilanesi)
+- Twitter: [@TomasMilanesi](https://twitter.com/TomasMilanesi)
 - LinkedIn: [Tomas Milanesi](https://www.linkedin.com/in/tomas-milanesi-3427bb185/)
 
 
