@@ -695,12 +695,13 @@ main .about-me .knowldege ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-position: 0% 0%;
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 18rem 10rem 0;
   }
   main .about-me .knowldege section {
-    margin-right: 15rem;
-    padding-right: 5rem;
     text-align: left;
   }
   main .about-me .knowldege section h3 {
