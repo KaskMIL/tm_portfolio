@@ -498,13 +498,11 @@ main .work-section a {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
-    background-image: url(../../images/card-bg-main.png);
+    background-image: url(../../images/imgProj2.png);
     background-repeat: none;
     background-size: cover;
   }
-  main .work-section .card-bg-main h3,
-  main .work-section .card-bg-main p,
-  main .work-section .card-bg-main .padd {
+  main .work-section .card-bg-main a {
     display: none;
   }
   main .work-section .card-bg-main .fullWidth-btn {
@@ -567,6 +565,19 @@ main .work-section a {
   }
   main .work-section .card-bg-5 a {
     display: none;
+  }
+  main .work-section .card-bg:hover {
+    background-image: url(../../images/card-bg-main.png);
+    background-repeat: none;
+    background-size: cover;
+  }
+  main .work-section .card-bg:hover h3,
+  main .work-section .card-bg:hover p,
+  main .work-section .card-bg:hover .padd {
+    display: none;
+  }
+  main .work-section .card-bg:hover a {
+    display: block;
   }
 }
 
@@ -684,12 +695,13 @@ main .about-me .knowldege ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-position: 0% 0%;
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 18rem 10rem 0;
   }
   main .about-me .knowldege section {
-    margin-right: 15rem;
-    padding-right: 5rem;
     text-align: left;
   }
   main .about-me .knowldege section h3 {
