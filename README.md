@@ -18,7 +18,7 @@ https://kaskmil.github.io/tm_portfolio/
 
 ## Authors
 
-👤 **Tomas Milanesi**
+👤 **Tom Milanesi**
 
 - GitHub: [@TomMilanesi](https://github.com/KaskMIL)
 - Twitter: [@TomasMilanesi](https://twitter.com/TomasMilanesi)
