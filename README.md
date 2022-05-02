@@ -11,7 +11,7 @@
 - Sass
 - Linters
 
-## Live Demo (if available)
+## Live Demo
 
 https://kaskmil.github.io/tm_portfolio/
 
