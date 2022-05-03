@@ -165,9 +165,10 @@ main .intro-section h1 {
   font-size: 5.6rem;
 }
 
-main .intro-section h3 {
+main .intro-section h2 {
+  font-family: 'Roboto', sans-serif;
   color: var(--main-subtitle);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 main .intro-section p {
@@ -356,7 +357,7 @@ main .work-section .card-bg .fullWidth-btn {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 1.7rem;
-  background-color: var(--main-title);
+  background-color: #8f3c00;
   border: none;
   text-align: center;
 }
@@ -413,7 +414,7 @@ main .work-section .card .first-btn {
   font-family: 'Inter', sans-serif;
   font-weight: bold;
   font-size: 1.7rem;
-  background-color: var(--main-title);
+  background-color: #8f3c00;
   border: none;
 }
 
@@ -506,7 +507,13 @@ main .work-section a {
     display: none;
   }
   main .work-section .card-bg-main .fullWidth-btn {
-    background-color: var(--active-btn-bg);
+    background-color: #8f3c00;
+  }
+  main .work-section .card-bg {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(black)), url(../../images/imgProj2.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), black), url(../../images/imgProj2.png);
+    background-size: cover, cover;
+    background-repeat: no-repeat, no-repeat;
   }
   main .work-section .card-bg .padd ul {
     margin: 1rem 0;
@@ -622,7 +629,7 @@ main .about-me .intro-about a {
   font-size: 1.7rem;
   font-weight: 700;
   color: var(--logo-color);
-  background-color: var(--main-title);
+  background-color: #8f3c00;
 }
 
 main .about-me .knowldege {
@@ -784,7 +791,7 @@ main .contact-section form ul .btn-container {
 
 main .contact-section form ul .btn-container button {
   border: none;
-  background-color: var(--main-title);
+  background-color: #943B00;
   color: var(--logo-color);
   font-family: 'Inter', sans-serif;
   font-size: 700;
@@ -800,8 +807,8 @@ main .contact-section form ul button:disabled {
 
 main .contact-section form ul .button:hover {
   background-color: var(--hover-btn-bg);
-  color: var(--main-title);
-  border: 0.1rem solid var(--main-title);
+  color: #943B00;
+  border: 0.1rem solid #943B00;
   padding: 1.9rem;
   cursor: pointer;
 }
