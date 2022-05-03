@@ -165,9 +165,10 @@ main .intro-section h1 {
   font-size: 5.6rem;
 }
 
-main .intro-section h3 {
+main .intro-section h2 {
+  font-family: 'Roboto', sans-serif;
   color: var(--main-subtitle);
-  font-size: 2.4rem;
+  font-size: 2.8rem;
 }
 
 main .intro-section p {
