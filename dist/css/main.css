@@ -791,7 +791,7 @@ main .contact-section form ul .btn-container {
 
 main .contact-section form ul .btn-container button {
   border: none;
-  background-color: var(--main-title);
+  background-color: #943B00;
   color: var(--logo-color);
   font-family: 'Inter', sans-serif;
   font-size: 700;
@@ -807,8 +807,8 @@ main .contact-section form ul button:disabled {
 
 main .contact-section form ul .button:hover {
   background-color: var(--hover-btn-bg);
-  color: var(--main-title);
-  border: 0.1rem solid var(--main-title);
+  color: #943B00;
+  border: 0.1rem solid #943B00;
   padding: 1.9rem;
   cursor: pointer;
 }
