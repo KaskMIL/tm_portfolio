@@ -18,7 +18,7 @@
 👤 **Tom Milanesi**
 
 - GitHub: [@TomMilanesi](https://github.com/KaskMIL)
-- Twitter: [@TomasMilanesi](https://twitter.com/TomasMilanesi)
+- Twitter: [@TomMilanesi](https://twitter.com/TomasMilanesi)
 - LinkedIn: [Tomas Milanesi](https://www.linkedin.com/in/tomas-milanesi-3427bb185/)
 
 
