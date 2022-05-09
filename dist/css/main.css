@@ -34,6 +34,7 @@ html {
   --active-btn-color: #f4f1f0;
   --disable-btn-bg: #f4f1f0;
   --disable-btn-color: #5b5957;
+  --menu-mobile-icon: #6f6c6b;
   /* background colors */
   --header-background: #3c3a39;
   --main-background: #1c1a19;
@@ -89,15 +90,12 @@ header .mobile-menu-off {
 }
 
 header .mobile-menu-on {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  position: fixed;
+  background-color: var(--header-background);
   height: 100vh;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 header .mobile-menu-on .close-btn {
@@ -111,20 +109,23 @@ header .mobile-menu-on .close-btn {
 
 header .mobile-menu-on .close-btn i {
   font-size: 5rem;
+  color: var(--menu-mobile-icon);
 }
 
 header .mobile-menu-on ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 header .mobile-menu-on ul li {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 3.2rem;
-  border-bottom: 0.1rem solid var(--logo-color);
+  border-bottom: 0.1rem solid var(--menu-mobile-icon);
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
 
 @media screen and (max-width: 768px) {
