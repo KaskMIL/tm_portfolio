@@ -1,4 +1,4 @@
-// DOM Manitpulation
+// DOM Variables
 const $logoId = document.querySelector('#logo-id');
 const $mobileHamburgerButton = document.querySelector('#mobile-menu-btn');
 const $mobileNav = document.querySelector('#mobile-nav');
@@ -15,6 +15,15 @@ $mobileHamburgerButton.addEventListener('click', () => {
   $mobileNav.classList.add('mobile-menu-on');
 });
 
+// Functions
+function hideMobileMenu() {
+  $mobileNav.classList.remove('mobile-menu-on');
+  $mobileNav.classList.add('mobile-menu-off');
+  $logoId.classList.remove('mobile-menu-off');
+  $mobileHamburgerButton.classList.remove('mobile-menu-off');
+}
+
+// DOM Manipulation
 $closeButton.addEventListener('click', () => {
   hideMobileMenu();
 });
@@ -31,10 +40,4 @@ $contactNavMobile.addEventListener('click', () => {
   hideMobileMenu();
 });
 
-// Functions
-function hideMobileMenu() {
-  $mobileNav.classList.remove('mobile-menu-on');
-  $mobileNav.classList.add('mobile-menu-off');
-  $logoId.classList.remove('mobile-menu-off');
-  $mobileHamburgerButton.classList.remove('mobile-menu-off');
-}
+
