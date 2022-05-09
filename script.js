@@ -1,13 +1,13 @@
-$logoId = document.querySelector('#logo-id');
-$mobileHamburgerButton = document.querySelector('#mobile-menu-btn');
-$mobileNav = document.querySelector('#mobile-nav');
-$closeButton = document.querySelector('#close-button');
+const $logoId = document.querySelector('#logo-id');
+const $mobileHamburgerButton = document.querySelector('#mobile-menu-btn');
+const $mobileNav = document.querySelector('#mobile-nav');
+const $closeButton = document.querySelector('#close-button');
 
-$portfolioNavMobile = document.querySelector('#portfolio-nav-mobile');
-$aboutNavMobile = document.querySelector('#about-nav-mobile');
-$contactNavMobile = document.querySelector('#contact-nav-mobile');
+const $portfolioNavMobile = document.querySelector('#portfolio-nav-mobile');
+const $aboutNavMobile = document.querySelector('#about-nav-mobile');
+const $contactNavMobile = document.querySelector('#contact-nav-mobile');
 
-$mobileHamburgerButton.addEventListener('click', (e) => {
+$mobileHamburgerButton.addEventListener('click', () => {
 	$logoId.classList.add('mobile-menu-off');
 	$mobileHamburgerButton.classList.add('mobile-menu-off');
 	$mobileNav.classList.remove('mobile-menu-off');
@@ -21,18 +21,18 @@ function hideMobileMenu() {
 	$mobileHamburgerButton.classList.remove('mobile-menu-off');
 }
 
-$closeButton.addEventListener('click', (e) => {
+$closeButton.addEventListener('click', () => {
 	hideMobileMenu();
 });
 
-$portfolioNavMobile.addEventListener('click', (e) => {
+$portfolioNavMobile.addEventListener('click', () => {
 	hideMobileMenu();
 });
 
-$aboutNavMobile.addEventListener('click', (e) => {
+$aboutNavMobile.addEventListener('click', () => {
 	hideMobileMenu();
 });
 
-$contactNavMobile.addEventListener('click', (e) => {
+$contactNavMobile.addEventListener('click', () => {
 	hideMobileMenu();
 });
