@@ -1,12 +1,4 @@
-//Functions
-function hideMobileMenu() {
-  $mobileNav.classList.remove('mobile-menu-on');
-  $mobileNav.classList.add('mobile-menu-off');
-  $logoId.classList.remove('mobile-menu-off');
-  $mobileHamburgerButton.classList.remove('mobile-menu-off');
-}
-
-//DOM Manitpulation
+// DOM Manitpulation
 const $logoId = document.querySelector('#logo-id');
 const $mobileHamburgerButton = document.querySelector('#mobile-menu-btn');
 const $mobileNav = document.querySelector('#mobile-nav');
@@ -38,3 +30,11 @@ $aboutNavMobile.addEventListener('click', () => {
 $contactNavMobile.addEventListener('click', () => {
   hideMobileMenu();
 });
+
+// Functions
+function hideMobileMenu() {
+  $mobileNav.classList.remove('mobile-menu-on');
+  $mobileNav.classList.add('mobile-menu-off');
+  $logoId.classList.remove('mobile-menu-off');
+  $mobileHamburgerButton.classList.remove('mobile-menu-off');
+}
