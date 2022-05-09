@@ -39,5 +39,3 @@ $aboutNavMobile.addEventListener('click', () => {
 $contactNavMobile.addEventListener('click', () => {
   hideMobileMenu();
 });
-
-
