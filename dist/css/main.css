@@ -84,6 +84,49 @@ header .logo {
   font-size: 2rem;
 }
 
+header .mobile-menu-off {
+  display: none;
+}
+
+header .mobile-menu-on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+header .mobile-menu-on .close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .mobile-menu-on .close-btn i {
+  font-size: 5rem;
+}
+
+header .mobile-menu-on ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .mobile-menu-on ul li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  border-bottom: 0.1rem solid var(--logo-color);
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   header .desktop-nav {
     display: none;
