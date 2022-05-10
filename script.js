@@ -81,20 +81,36 @@ const ProjectList = [{
 
 for(let i = 0; i < ProjectList.length; i++) {
   let card = document.createElement("article");
-}
-
-let firstCard = document.createElement("article");
-firstCard.classList.add("card","card-desktop")
-firstCard.innerHTML = `<img src="${ProjectList[0].featureImg}" alt="Main Project image">
+  let count = i;
+  if(i === 0) {
+    card.classList.add("card","card-desktop");
+    card.innerHTML = `<img src="${ProjectList[i].featureImg}" alt="Main Project image">
                 <section class="card-content">
-                    <h3>${ProjectList[0].title}</h3>
-                    <p>${ProjectList[0].description}</p>
+                    <h3>${ProjectList[i].title}</h3>
+                    <p>${ProjectList[i].description}</p>
                     <ul>
-                        <li>${ProjectList[0].tecnologies.firstTec}</li>
-                        <li>${ProjectList[0].tecnologies.secondTec}</li>
-                        <li>${ProjectList[0].tecnologies.thirdTec}</li>
-                        <li>${ProjectList[0].tecnologies.fourthTec}</li>
+                        <li>${ProjectList[i].tecnologies.firstTec}</li>
+                        <li>${ProjectList[i].tecnologies.secondTec}</li>
+                        <li>${ProjectList[i].tecnologies.thirdTec}</li>
+                        <li>${ProjectList[i].tecnologies.fourthTec}</li>
                     </ul>
                     <a href="#" class="first-btn">See Project</a>
                 </section>`;
-$worksSection.appendChild(firstCard);
+      $worksSection.appendChild(card);
+  }
+  else{
+    card.classList.add("card","card-bg",`card-bg-${count}`);
+    card.innerHTML = `
+                <h3>${ProjectList[i].title}</h3>
+                <p>${ProjectList[i].description}</p>
+                <div class="padd">
+                    <ul>
+                        <li>${ProjectList[i].tecnologies.firstTec}</li>
+                        <li>${ProjectList[i].tecnologies.secondTec}</li>
+                        <li>${ProjectList[i].tecnologies.thirdTec}</li>
+                    </ul>
+                </div>
+                <a href="#" class="fullWidth-btn">See Project</a>`
+      $worksSection.appendChild(card);
+  }
+}
