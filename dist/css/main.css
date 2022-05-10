@@ -548,7 +548,7 @@ main .work-section a {
   main .work-section .card-desktop .card-content a {
     padding: 1rem;
   }
-  main .work-section .card-bg-main {
+  main .work-section .card-bg-1 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -559,10 +559,10 @@ main .work-section a {
     background-repeat: none;
     background-size: cover;
   }
-  main .work-section .card-bg-main a {
+  main .work-section .card-bg-1 a {
     display: none;
   }
-  main .work-section .card-bg-main .fullWidth-btn {
+  main .work-section .card-bg-1 .fullWidth-btn {
     background-color: #8f3c00;
   }
   main .work-section .card-bg {
@@ -574,7 +574,7 @@ main .work-section a {
   main .work-section .card-bg .padd ul {
     margin: 1rem 0;
   }
-  main .work-section .card-bg-1 {
+  main .work-section .card-bg-2 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
@@ -582,27 +582,16 @@ main .work-section a {
     -ms-grid-column-span: 1;
     grid-column: 2/3;
   }
-  main .work-section .card-bg-1 a {
+  main .work-section .card-bg-2 a {
     display: none;
   }
-  main .work-section .card-bg-2 {
+  main .work-section .card-bg-3 {
     -ms-grid-row: 3;
     -ms-grid-row-span: 1;
     grid-row: 3/4;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
-  }
-  main .work-section .card-bg-2 a {
-    display: none;
-  }
-  main .work-section .card-bg-3 {
-    -ms-grid-row: 4;
-    -ms-grid-row-span: 1;
-    grid-row: 4/5;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
   }
   main .work-section .card-bg-3 a {
     display: none;
@@ -611,9 +600,9 @@ main .work-section a {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     -ms-grid-column-span: 1;
-    grid-column: 2/3;
+    grid-column: 1/2;
   }
   main .work-section .card-bg-4 a {
     display: none;
@@ -622,11 +611,22 @@ main .work-section a {
     -ms-grid-row: 4;
     -ms-grid-row-span: 1;
     grid-row: 4/5;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  main .work-section .card-bg-5 a {
+    display: none;
+  }
+  main .work-section .card-bg-6 {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
     -ms-grid-column: 3;
     -ms-grid-column-span: 1;
     grid-column: 3/4;
   }
-  main .work-section .card-bg-5 a {
+  main .work-section .card-bg-6 a {
     display: none;
   }
   main .work-section .card-bg:hover {

@@ -77,6 +77,18 @@ const ProjectList = [{
   secondTec: "Bootstrap",
   thirdTec: "Ruby"
 }
+},
+{title: "Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
+  firstTec: "html",
+  secondTec: "Bootstrap",
+  thirdTec: "Ruby"
+}
+},
+{title: "Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
+  firstTec: "html",
+  secondTec: "Bootstrap",
+  thirdTec: "Ruby"
+}
 }];
 
 for(let i = 0; i < ProjectList.length; i++) {
