@@ -39,3 +39,62 @@ $aboutNavMobile.addEventListener('click', () => {
 $contactNavMobile.addEventListener('click', () => {
   hideMobileMenu();
 });
+
+
+const $worksSection = document.getElementById("works-section");
+
+const ProjectList = [{
+  title: "Multi-Post Stories",
+  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text",
+  featureImg: "images/ImgProj.png",
+  tecnologies: {
+    firstTec: "css",
+    secondTec: "html",
+    thirdTec: "Bootstrap",
+    fourthTec: "Ruby"
+  }
+},
+{title: "Profesional Art Printing Data", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
+  firstTec: "html",
+  secondTec: "Bootstrap",
+  thirdTec: "Ruby"
+}
+},
+{title: "Data Dashboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
+  firstTec: "html",
+  secondTec: "Bootstrap",
+  thirdTec: "Ruby"
+}
+},
+{title: "Website Portfolio", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
+  firstTec: "html",
+  secondTec: "Bootstrap",
+  thirdTec: "Ruby"
+}
+},
+{title: "Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
+  firstTec: "html",
+  secondTec: "Bootstrap",
+  thirdTec: "Ruby"
+}
+}];
+
+for(let i = 0; i < ProjectList.length; i++) {
+  let card = document.createElement("article");
+}
+
+let firstCard = document.createElement("article");
+firstCard.classList.add("card","card-desktop")
+firstCard.innerHTML = `<img src="${ProjectList[0].featureImg}" alt="Main Project image">
+                <section class="card-content">
+                    <h3>${ProjectList[0].title}</h3>
+                    <p>${ProjectList[0].description}</p>
+                    <ul>
+                        <li>${ProjectList[0].tecnologies.firstTec}</li>
+                        <li>${ProjectList[0].tecnologies.secondTec}</li>
+                        <li>${ProjectList[0].tecnologies.thirdTec}</li>
+                        <li>${ProjectList[0].tecnologies.fourthTec}</li>
+                    </ul>
+                    <a href="#" class="first-btn">See Project</a>
+                </section>`;
+$worksSection.appendChild(firstCard);
