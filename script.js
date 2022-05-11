@@ -18,8 +18,6 @@ const $allButtonsPopup = document.querySelectorAll('.btn-popup');
 // Functions
 /**
  * Adds two numbers together.
- * @param {int} num1 The first number.
- * @returns {int} The sum of the two numbers.
  */
 function hideMobileMenu() {
   $mobileNav.classList.remove('mobile-menu-on');
