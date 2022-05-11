@@ -65,6 +65,8 @@ const ProjectList = [
       thirdTec: 'Bootstrap',
       fourthTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
   {
     title: 'Profesional Art Printing Data',
@@ -76,6 +78,8 @@ const ProjectList = [
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
   {
     title: 'Data Dashboard Healthcare',
@@ -87,6 +91,8 @@ const ProjectList = [
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
   {
     title: 'Website Portfolio',
@@ -98,6 +104,8 @@ const ProjectList = [
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
   {
     title: 'Data Daschboard Healthcare',
@@ -109,6 +117,8 @@ const ProjectList = [
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
   {
     title: 'Data Daschboard Healthcare',
@@ -120,6 +130,8 @@ const ProjectList = [
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
   {
     title: 'Data Daschboard Healthcare',
@@ -131,6 +143,8 @@ const ProjectList = [
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
     },
+    liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
+    sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
 ];
 
