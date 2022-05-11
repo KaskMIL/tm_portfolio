@@ -159,18 +159,18 @@ const $main = document.getElementById('main');
 const $allButtonsPopup = document.querySelectorAll('.btn-popup');
 
 for (let i = 0; i < $allButtonsPopup.length; i += 1) {
-  $allButtonsPopup[i].addEventListener ('click', () => {
-		$popupSection.classList.remove('no-visible');
-		$body.classList.add('disable-scroll');
-		$header.classList.add('blur');
-		$main.classList.add('blur');
-	})
+  $allButtonsPopup[i].addEventListener('click', () => {
+    $popupSection.classList.remove('no-visible');
+    $body.classList.add('disable-scroll');
+    $header.classList.add('blur');
+    $main.classList.add('blur');
+  });
 };
 
-$closeButtonPopup.addEventListener ('click', () => {
-	$popupSection.classList.add('no-visible');
-	$body.classList.remove('disable-scroll');
-	$header.classList.remove('blur');
-	$main.classList.remove('blur');
-})
+$closeButtonPopup.addEventListener('click', () => {
+  $popupSection.classList.add('no-visible');
+  $body.classList.remove('disable-scroll');
+  $header.classList.remove('blur');
+  $main.classList.remove('blur');
+});
 
