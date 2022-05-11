@@ -16,6 +16,11 @@ const $main = document.getElementById('main');
 const $allButtonsPopup = document.querySelectorAll('.btn-popup');
 
 // Functions
+/**
+ * Adds two numbers together.
+ * @param {int} num1 The first number.
+ * @returns {int} The sum of the two numbers.
+ */
 function hideMobileMenu() {
   $mobileNav.classList.remove('mobile-menu-on');
   $mobileNav.classList.add('mobile-menu-off');
@@ -137,11 +142,14 @@ for (let i = 0; i < ProjectList.length; i += 1) {
   const count = i;
   if (i === 0) {
     card.classList.add('card', 'card-desktop');
-    card.innerHTML = `<img src="${ProjectList[i].featureImg}" alt="Main Project image">
+    card.innerHTML = `<img src="${ProjectList[i].featureImg}"
+     alt="Main Project image">
                 <section class="card-content">
                     <h3>${ProjectList[i].title}</h3>
-                    <p>${ProjectList[i].description} ${ProjectList[i].descriptionTwo}
-                    ${ProjectList[i].descriptioThree} ${ProjectList[i].descriptionFour}</p>
+                    <p>${ProjectList[i].description} 
+                    ${ProjectList[i].descriptionTwo}
+                    ${ProjectList[i].descriptioThree} 
+                    ${ProjectList[i].descriptionFour}</p>
                     <ul>
                         <li>${ProjectList[i].tecnologies.firstTec}</li>
                         <li>${ProjectList[i].tecnologies.secondTec}</li>
@@ -155,7 +163,8 @@ for (let i = 0; i < ProjectList.length; i += 1) {
     card.classList.add('card', 'card-bg', `card-bg-${count}`);
     card.innerHTML = `
                 <h3>${ProjectList[i].title}</h3>
-                <p>${ProjectList[i].description} ${ProjectList[i].descriptionTwo}
+                <p>${ProjectList[i].description} 
+                ${ProjectList[i].descriptionTwo}
                 ${ProjectList[i].descriptioThree}</p>
                 <div class="padd">
                     <ul>
