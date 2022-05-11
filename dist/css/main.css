@@ -1030,8 +1030,9 @@ footer ul li a img {
 }
 
 .popup article .title-popup i {
-  font-size: 2rem;
+  font-size: 3rem;
   cursor: pointer;
+  color: #67798e;
 }
 
 .popup article ul {
@@ -1062,7 +1063,13 @@ footer ul li a img {
   font-family: 'Inter',sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 2rem;
+}
+
+.popup article section ul {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .popup article section ul li {
@@ -1072,14 +1079,33 @@ footer ul li a img {
   -webkit-box-pack: baseline;
       -ms-flex-pack: baseline;
           justify-content: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: var(--main-title);
   border: none;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: white;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1.2rem;
   cursor: pointer;
+}
+
+.popup article section ul li a:link {
+  text-decoration: none;
+}
+
+.popup article section ul li a:visited {
+  text-decoration: none;
+}
+
+.popup article section ul li a:hover {
+  text-decoration: underline;
+}
+
+.popup article section ul li a:active {
+  text-decoration: underline;
 }
 
 .popup article section ul li a {
@@ -1088,6 +1114,14 @@ footer ul li a img {
 }
 
 @media screen and (min-width: 948px) {
+  .popup article .title-popup h3 {
+    font-family: 'Crete Round', serif;
+  }
+  .popup article ul li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
   .popup section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1113,6 +1147,9 @@ footer ul li a img {
   }
   .popup section .description-popup ul {
     margin: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
