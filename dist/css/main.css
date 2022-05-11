@@ -1120,10 +1120,6 @@ footer ul li a img {
   display: none;
 }
 
-.visible {
-  display: block;
-}
-
 .blur {
   -webkit-filter: blur(0.8rem);
           filter: blur(0.8rem);
