@@ -52,8 +52,8 @@ const $worksSection = document.getElementById('works-section');
 const ProjectList = [
   {
     title: 'Multi-Post Stories',
-    description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    descriptionTwo: 'has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
     featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'css',
@@ -64,8 +64,8 @@ const ProjectList = [
   },
   {
     title: 'Profesional Art Printing Data',
-    description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description:'A daily selection of privately personalized reads;',
+    descriptionTwo: ' no accounts or sign-ups required. has been the industrys standard',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -74,8 +74,8 @@ const ProjectList = [
   },
   {
     title: 'Data Dashboard Healthcare',
-    description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'A daily selection of privately personalized reads;',
+    descriptionTwo: ' no accounts or sign-ups required. has been the industrys standard',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -84,8 +84,8 @@ const ProjectList = [
   },
   {
     title: 'Website Portfolio',
-    description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'A daily selection of privately personalized reads;',
+    descriptionTwo: ' no accounts or sign-ups required. has been the industrys standard',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -94,8 +94,8 @@ const ProjectList = [
   },
   {
     title: 'Data Daschboard Healthcare',
-    description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'A daily selection of privately personalized reads;',
+    descriptionTwo: ' no accounts or sign-ups required. has been the industrys standard',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -104,8 +104,8 @@ const ProjectList = [
   },
   {
     title: 'Data Daschboard Healthcare',
-    description:
-			'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    description: 'A daily selection of privately personalized reads;',
+    descriptionTwo: ' no accounts or sign-ups required. has been the industrys standard',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -114,7 +114,9 @@ const ProjectList = [
   },
   {
     title:
-			'Data Daschboard Healthcare', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standar',
+			'Data Daschboard Healthcare',
+    description: 'A daily selection of privately personalized reads;',
+    descriptionTwo: ' no accounts or sign-ups required. has been the industrys standar',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -131,7 +133,7 @@ for (let i = 0; i < ProjectList.length; i += 1) {
     card.innerHTML = `<img src="${ProjectList[i].featureImg}" alt="Main Project image">
                 <section class="card-content">
                     <h3>${ProjectList[i].title}</h3>
-                    <p>${ProjectList[i].description}</p>
+                    <p>${ProjectList[i].description} ${ProjectList[i].descriptionTwo}</p>
                     <ul>
                         <li>${ProjectList[i].tecnologies.firstTec}</li>
                         <li>${ProjectList[i].tecnologies.secondTec}</li>
@@ -145,7 +147,7 @@ for (let i = 0; i < ProjectList.length; i += 1) {
     card.classList.add('card', 'card-bg', `card-bg-${count}`);
     card.innerHTML = `
                 <h3>${ProjectList[i].title}</h3>
-                <p>${ProjectList[i].description}</p>
+                <p>${ProjectList[i].description} ${ProjectList[i].descriptionTwo}</p>
                 <div class="padd">
                     <ul>
                         <li>${ProjectList[i].tecnologies.firstTec}</li>
