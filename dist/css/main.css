@@ -16,6 +16,16 @@ html {
           box-sizing: inherit;
 }
 
+.disable-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  position: relative;
+}
+
 /* Colors */
 :root {
   /* Font colors */
@@ -978,5 +988,111 @@ footer ul li a img {
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
   }
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup article {
+  background-color: white;
+  width: 80%;
+  padding: 2.4rem;
+}
+
+.popup article .title-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.popup article .title-popup h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 3.2rem;
+  margin: 0;
+}
+
+.popup article .title-popup .close-btn {
+  font-size: 4rem;
+  color: #67798e;
+}
+
+.popup article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.popup article ul li {
+  margin-right: 1rem;
+  border: 0.1rem solid black;
+  padding: 0.5rem 1rem;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.popup article img {
+  min-width: 100%;
+  height: auto;
+}
+
+.popup article .description-popup {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.popup article ul li {
+  background-color: var(--main-title);
+  color: var(--logo-color);
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.7rem;
+  padding: 1rem;
+}
+
+.popup article ul li a {
+  text-decoration: none;
+  color: var(--logo-color);
+  margin-right: 1rem;
+}
+
+@media screen and (min-width: 948px) {
+  .popup .img-descrition {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .popup .img-descrition img {
+    width: 50%;
+  }
+}
+
+header, main {
+  -webkit-filter: blur(0.8rem);
+          filter: blur(0.8rem);
 }
 /*# sourceMappingURL=main.css.map */
