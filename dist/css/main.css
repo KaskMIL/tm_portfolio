@@ -996,19 +996,26 @@ footer ul li a img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-top: 5rem;
 }
 
 .popup article {
+  max-width: 80%;
   background-color: white;
-  width: 80%;
-  padding: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
 }
 
 .popup article .title-popup {
@@ -1028,9 +1035,8 @@ footer ul li a img {
   margin: 0;
 }
 
-.popup article .title-popup .close-btn {
-  font-size: 4rem;
-  color: #67798e;
+.popup article .title-popup i {
+  font-size: 2rem;
 }
 
 .popup article ul {
@@ -1044,55 +1050,79 @@ footer ul li a img {
 }
 
 .popup article ul li {
-  margin-right: 1rem;
-  border: 0.1rem solid black;
-  padding: 0.5rem 1rem;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.3rem;
+  border: 0.1rem solid black;
+  margin-right: 1.5rem;
+  padding: 0.5rem 1rem;
 }
 
-.popup article img {
-  min-width: 100%;
+.popup article section .img-popup-container img {
+  width: 100%;
   height: auto;
 }
 
-.popup article .description-popup {
-  font-family: 'Inter', sans-serif;
+.popup article section .description-popup p {
+  font-family: 'Inter',sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
-.popup article ul li {
+.popup article section ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
   background-color: var(--main-title);
-  color: var(--logo-color);
   border: none;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 1.7rem;
-  padding: 1rem;
+  color: white;
+  padding: 0.5rem 1rem;
 }
 
-.popup article ul li a {
-  text-decoration: none;
-  color: var(--logo-color);
+.popup article section ul li a {
+  color: white;
   margin-right: 1rem;
 }
 
 @media screen and (min-width: 948px) {
-  .popup .img-descrition {
+  .popup section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .popup .img-descrition img {
-    width: 50%;
+  .popup section .description-popup {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 1rem;
+  }
+  .popup section .description-popup p {
+    margin: 0 0 2rem 0;
+  }
+  .popup section .description-popup ul {
+    margin: 0;
   }
 }
 
 header, main {
   -webkit-filter: blur(0.8rem);
           filter: blur(0.8rem);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 /*# sourceMappingURL=main.css.map */
