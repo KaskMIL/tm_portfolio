@@ -107,7 +107,7 @@ const ProjectList = [
   },
   {
     title:
-			'Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standar',
+			'Data Daschboard Healthcare', description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standar',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -131,7 +131,7 @@ for (let i = 0; i < ProjectList.length; i += 1) {
                         <li>${ProjectList[i].tecnologies.thirdTec}</li>
                         <li>${ProjectList[i].tecnologies.fourthTec}</li>
                     </ul>
-                    <a href="#" class="first-btn">See Project</a>
+                    <a href="#" class="first-btn btn-popup">See Project</a>
                 </section>`;
     $worksSection.appendChild(card);
   } else {
@@ -146,8 +146,40 @@ for (let i = 0; i < ProjectList.length; i += 1) {
                         <li>${ProjectList[i].tecnologies.thirdTec}</li>
                     </ul>
                 </div>
-                <a href="#" class="fullWidth-btn">See Project</a>`;
+                <a href="#" class="fullWidth-btn btn-popup">See Project</a>`;
     $worksSection.appendChild(card);
   }
-}
+};
+
+const $seeProjectButton = document.querySelector(".first-btn");
+const $popupSection = document.getElementById("popup");
+const $closeButtonPopup = document.getElementById("close-button-popup");
+const $body = document.body;
+const $header = document.getElementById("header");
+const $main = document.getElementById("main");
+
+const $allButtonsPopup = document.querySelectorAll(".btn-popup");
+
+for (let i = 0; i < $allButtonsPopup.length; i += 1) {
+	$allButtonsPopup[i].addEventListener ("click", () => {
+		$popupSection.classList.remove("no-visible");
+		$body.classList.add("disable-scroll");
+		$header.classList.add("blur");
+		$main.classList.add("blur");
+	})
+};
+
+// $seeProjectButton.addEventListener ("click", () => {
+// 	$popupSection.classList.remove("no-visible");
+// 	$body.classList.add("disable-scroll");
+// 	$header.classList.add("blur");
+// 	$main.classList.add("blur");
+// })
+
+$closeButtonPopup.addEventListener ("click", () => {
+	$popupSection.classList.add("no-visible");
+	$body.classList.remove("disable-scroll");
+	$header.classList.remove("blur");
+	$main.classList.remove("blur");
+})
 
