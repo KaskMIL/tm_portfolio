@@ -16,12 +16,6 @@ html {
           box-sizing: inherit;
 }
 
-.disable-scroll {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
 body {
   position: relative;
 }
@@ -1124,5 +1118,11 @@ header, main {
   -webkit-filter: blur(0.8rem);
           filter: blur(0.8rem);
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.disable-scroll {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 /*# sourceMappingURL=main.css.map */
