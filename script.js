@@ -13,7 +13,6 @@ const $closeButtonPopup = document.getElementById('close-button-popup');
 const $body = document.body;
 const $header = document.getElementById('header');
 const $main = document.getElementById('main');
-const $allButtonsPopup = document.querySelectorAll('.btn-popup');
 
 // Functions
 /**
@@ -175,6 +174,8 @@ for (let i = 0; i < ProjectList.length; i += 1) {
     $worksSection.appendChild(card);
   }
 };
+
+const $allButtonsPopup = document.querySelectorAll('.btn-popup');
 
 for (let i = 0; i < $allButtonsPopup.length; i += 1) {
   $allButtonsPopup[i].addEventListener('click', () => {
