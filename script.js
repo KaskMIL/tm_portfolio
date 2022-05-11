@@ -41,61 +41,79 @@ $contactNavMobile.addEventListener('click', () => {
 });
 
 
-const $worksSection = document.getElementById("works-section");
+const $worksSection = document.getElementById('works-section');
 
 const ProjectList = [{
-  title: "Multi-Post Stories",
-  description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text",
-  featureImg: "images/ImgProj.png",
-  tecnologies: {
-    firstTec: "css",
-    secondTec: "html",
-    thirdTec: "Bootstrap",
-    fourthTec: "Ruby"
+    title: 'Multi-Post Stories',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text',
+    featureImg: 'images/ImgProj.png',
+    tecnologies: {
+      firstTec: 'css',
+      secondTec: 'html',
+      thirdTec: 'Bootstrap',
+      fourthTec: 'Ruby',
+    },
+  },
+  {
+    title: 'Profesional Art Printing Data',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    tecnologies: {
+      firstTec: 'html',
+      secondTec: 'Bootstrap',
+      thirdTec: 'Ruby',
+    },
+  },
+  {
+    title: 'Data Dashboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    tecnologies: {
+      firstTec: 'html',
+      secondTec: 'Bootstrap',
+      thirdTec: 'Ruby',
+    },
+  },
+  {
+    title: 'Website Portfolio',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    tecnologies: {
+      firstTec: 'html',
+      secondTec: 'Bootstrap',
+      thirdTec: 'Ruby',
+    },
+  },
+  {
+    title: 'Data Daschboard Healthcare',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    tecnologies: {
+      firstTec: 'html',
+      secondTec: 'Bootstrap',
+      thirdTec: 'Ruby',
+    },
+  },
+  {
+    title: 'Data Daschboard Healthcare"',
+    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standard',
+    tecnologies: {
+      firstTec: 'html',
+      secondTec: 'Bootstrap',
+      thirdTec: 'Ruby',
+    },
+  },
+  {
+    title: 'Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industrys standar',
+    tecnologies: {
+      firstTec: 'html',
+      secondTec: 'Bootstrap',
+      thirdTec: 'Ruby',
+    },
   }
-},
-{title: "Profesional Art Printing Data", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
-  firstTec: "html",
-  secondTec: "Bootstrap",
-  thirdTec: "Ruby"
-}
-},
-{title: "Data Dashboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
-  firstTec: "html",
-  secondTec: "Bootstrap",
-  thirdTec: "Ruby"
-}
-},
-{title: "Website Portfolio", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
-  firstTec: "html",
-  secondTec: "Bootstrap",
-  thirdTec: "Ruby"
-}
-},
-{title: "Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
-  firstTec: "html",
-  secondTec: "Bootstrap",
-  thirdTec: "Ruby"
-}
-},
-{title: "Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
-  firstTec: "html",
-  secondTec: "Bootstrap",
-  thirdTec: "Ruby"
-}
-},
-{title: "Data Daschboard Healthcare", description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard", tecnologies: {
-  firstTec: "html",
-  secondTec: "Bootstrap",
-  thirdTec: "Ruby"
-}
-}];
+];
 
-for(let i = 0; i < ProjectList.length; i++) {
-  let card = document.createElement("article");
-  let count = i;
-  if(i === 0) {
-    card.classList.add("card","card-desktop");
+for (let i = 0; i < ProjectList.length; i += 1) {
+  const card = document.createElement('article');
+  const count = i;
+  if (i === 0) {
+    card.classList.add('card', 'card-desktop');
     card.innerHTML = `<img src="${ProjectList[i].featureImg}" alt="Main Project image">
                 <section class="card-content">
                     <h3>${ProjectList[i].title}</h3>
@@ -108,10 +126,9 @@ for(let i = 0; i < ProjectList.length; i++) {
                     </ul>
                     <a href="#" class="first-btn">See Project</a>
                 </section>`;
-      $worksSection.appendChild(card);
-  }
-  else{
-    card.classList.add("card","card-bg",`card-bg-${count}`);
+    $worksSection.appendChild(card);
+  } else {
+    card.classList.add('card', 'card-bg', `card-bg-${count}`);
     card.innerHTML = `
                 <h3>${ProjectList[i].title}</h3>
                 <p>${ProjectList[i].description}</p>
@@ -122,7 +139,7 @@ for(let i = 0; i < ProjectList.length; i++) {
                         <li>${ProjectList[i].tecnologies.thirdTec}</li>
                     </ul>
                 </div>
-                <a href="#" class="fullWidth-btn">See Project</a>`
-      $worksSection.appendChild(card);
+                <a href="#" class="fullWidth-btn">See Project</a>`;
+    $worksSection.appendChild(card);
   }
 }
