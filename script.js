@@ -8,6 +8,13 @@ const $portfolioNavMobile = document.getElementById('portfolio-nav-mobile');
 const $aboutNavMobile = document.getElementById('about-nav-mobile');
 const $contactNavMobile = document.getElementById('contact-nav-mobile');
 
+const $popupSection = document.getElementById('popup');
+const $closeButtonPopup = document.getElementById('close-button-popup');
+const $body = document.body;
+const $header = document.getElementById('header');
+const $main = document.getElementById('main');
+const $allButtonsPopup = document.querySelectorAll('.btn-popup');
+
 // Functions
 function hideMobileMenu() {
   $mobileNav.classList.remove('mobile-menu-on');
@@ -150,13 +157,6 @@ for (let i = 0; i < ProjectList.length; i += 1) {
     $worksSection.appendChild(card);
   }
 };
-
-const $popupSection = document.getElementById('popup');
-const $closeButtonPopup = document.getElementById('close-button-popup');
-const $body = document.body;
-const $header = document.getElementById('header');
-const $main = document.getElementById('main');
-const $allButtonsPopup = document.querySelectorAll('.btn-popup');
 
 for (let i = 0; i < $allButtonsPopup.length; i += 1) {
   $allButtonsPopup[i].addEventListener('click', () => {
