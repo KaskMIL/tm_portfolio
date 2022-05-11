@@ -1031,6 +1031,7 @@ footer ul li a img {
 
 .popup article .title-popup i {
   font-size: 2rem;
+  cursor: pointer;
 }
 
 .popup article ul {
@@ -1078,6 +1079,7 @@ footer ul li a img {
   font-size: 1.7rem;
   color: white;
   padding: 0.5rem 1rem;
+  cursor: pointer;
 }
 
 .popup article section ul li a {
@@ -1114,7 +1116,15 @@ footer ul li a img {
   }
 }
 
-header, main {
+.no-visible {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+.blur {
   -webkit-filter: blur(0.8rem);
           filter: blur(0.8rem);
   background-color: rgba(0, 0, 0, 0.5);
