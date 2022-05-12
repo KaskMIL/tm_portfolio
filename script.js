@@ -73,6 +73,7 @@ const ProjectList = [
     description: 'A daily selection of privately personalized reads;',
     descriptionTwo: ' no accounts or sign-ups ',
     descriptioThree: 'required. has been the industrys standard',
+    featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -86,6 +87,7 @@ const ProjectList = [
     description: 'A daily selection of privately personalized reads;',
     descriptionTwo: ' no accounts or sign-ups required.',
     descriptioThree: ' has been the industrys standard',
+    featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -99,6 +101,7 @@ const ProjectList = [
     description: 'A daily selection of privately personalized reads;',
     descriptionTwo: ' no accounts or sign-ups required.',
     descriptioThree: ' has been the industrys standard',
+    featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -112,6 +115,7 @@ const ProjectList = [
     description: 'A daily selection of privately personalized reads;',
     descriptionTwo: ' no accounts or sign-ups required.',
     descriptioThree: ' has been the industrys standard',
+    featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -125,6 +129,7 @@ const ProjectList = [
     description: 'A daily selection of privately personalized reads;',
     descriptionTwo: ' no accounts or sign-ups required.',
     descriptioThree: ' has been the industrys standard',
+    featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -138,6 +143,7 @@ const ProjectList = [
     description: 'A daily selection of privately personalized reads;',
     descriptionTwo: ' no accounts or sign-ups required.',
     descriptioThree: ' has been the industrys standar',
+    featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'html',
       secondTec: 'Bootstrap',
@@ -190,9 +196,33 @@ for (let i = 0; i < ProjectList.length; i += 1) {
 };
 
 const $allButtonsPopup = document.querySelectorAll('.btn-popup');
+const titlePopup = document.getElementById('title-popup');
+const articlePopup = document.getElementById('article-popup');
+const ul = document.createElement('ul');
+const sectionContainerPopup = document.createElement('section');
+articlePopup.appendChild(ul);
+articlePopup.appendChild(sectionContainerPopup);
 
 for (let i = 0; i < $allButtonsPopup.length; i += 1) {
   $allButtonsPopup[i].addEventListener('click', () => {
+    titlePopup.innerHTML = ProjectList[i].title;
+    ul.innerHTML = `<li>${ProjectList[i].tecnologies.firstTec}</li>
+                    <li>${ProjectList[i].tecnologies.secondTec}</li>
+                    <li>${ProjectList[i].tecnologies.thirdTec}</li>`;
+    
+    sectionContainerPopup.innerHTML = `<div class="img-popup-container">
+     <img src="${ProjectList[i].featureImg}" alt="Mobile">
+    </div>
+    <div class="description-popup">
+    <p>${ProjectList[i].description}
+    ${ProjectList[i].descriptionTwo}
+    ${ProjectList[i].descriptioThree}
+    ${ProjectList[i].descriptionFour}</p>
+    <ul>
+        <li><a target="_blank" rel="noopener" href="${ProjectList[i].liveVersion}">See Live</a> <i class="bi bi-box-arrow-up-right"></i></li>
+        <li><a target="_blank" rel="noopener" href="${ProjectList[i].sourceCode}">See Source</a><i class="bi bi-github"></i></li>
+    </ul>
+    </div>`;
     $popupSection.classList.remove('no-visible');
     $body.classList.add('disable-scroll');
     $header.classList.add('blur');

@@ -987,6 +987,7 @@ footer ul li a img {
 .popup {
   position: absolute;
   top: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1127,9 +1128,13 @@ footer ul li a img {
     display: -ms-flexbox;
     display: flex;
   }
+  .popup section .img-popup-container {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+  }
   .popup section .description-popup {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
