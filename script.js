@@ -209,7 +209,6 @@ for (let i = 0; i < $allButtonsPopup.length; i += 1) {
     ul.innerHTML = `<li>${ProjectList[i].tecnologies.firstTec}</li>
                     <li>${ProjectList[i].tecnologies.secondTec}</li>
                     <li>${ProjectList[i].tecnologies.thirdTec}</li>`;
-    
     sectionContainerPopup.innerHTML = `<div class="img-popup-container">
      <img src="${ProjectList[i].featureImg}" alt="Mobile">
     </div>
@@ -219,8 +218,12 @@ for (let i = 0; i < $allButtonsPopup.length; i += 1) {
     ${ProjectList[i].descriptioThree}
     ${ProjectList[i].descriptionFour}</p>
     <ul>
-        <li><a target="_blank" rel="noopener" href="${ProjectList[i].liveVersion}">See Live</a> <i class="bi bi-box-arrow-up-right"></i></li>
-        <li><a target="_blank" rel="noopener" href="${ProjectList[i].sourceCode}">See Source</a><i class="bi bi-github"></i></li>
+        <li><a target="_blank" rel="noopener" 
+        href="${ProjectList[i].liveVersion}">See Live</a> 
+        <i class="bi bi-box-arrow-up-right"></i></li>
+        <li><a target="_blank" rel="noopener" 
+        href="${ProjectList[i].sourceCode}">See Source</a>
+        <i class="bi bi-github"></i></li>
     </ul>
     </div>`;
     $popupSection.classList.remove('no-visible');
