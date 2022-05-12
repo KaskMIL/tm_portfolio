@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/KaskMIL/tm_portfolio#readme",
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.26.0",
     "sass": "^1.50.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
