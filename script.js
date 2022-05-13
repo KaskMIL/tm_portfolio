@@ -240,3 +240,33 @@ $closeButtonPopup.addEventListener('click', () => {
   $main.classList.remove('blur');
 });
 
+// CONTACT FORM VALIDATION
+const userName = document.getElementById('name');
+const mail = document.getElementById('mail');
+const textArea = document.getElementById('message');
+const parentMail = mail.parentElement;
+const smallMail = parentMail.querySelector('small');
+
+const contactForm = document.getElementById('contact-form');
+
+function validateEmail(field) {
+  let valid = false
+  let regex = /^[a-z@.\-_]+$/
+
+  if(regex.test(field)){
+    valid = true;
+  }
+  return valid
+}
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  smallMail.textContent = '';
+  if(validateEmail(mail.value)){
+    contactForm.submit()
+  }
+  else {
+    smallMail.textContent = `Please make sure that the Email is in lowecase,
+    you write ${mail.value}`
+  }
+})
