@@ -828,6 +828,7 @@ main .contact-section form ul li input {
   border: none;
   border-bottom: 0.01rem solid #c3bdbc;
   padding: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 main .contact-section form ul li textarea {
@@ -838,6 +839,14 @@ main .contact-section form ul li textarea {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   background-color: var(--textarea-bg);
+}
+
+main .contact-section form ul li .error-message {
+  background-color: #ff6600;
+  padding: 1rem 0.5rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: white;
 }
 
 main .contact-section form ul .btn-container {

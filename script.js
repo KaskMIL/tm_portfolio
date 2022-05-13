@@ -14,6 +14,11 @@ const $body = document.body;
 const $header = document.getElementById('header');
 const $main = document.getElementById('main');
 
+const mail = document.getElementById('mail');
+const parentMail = mail.parentElement;
+const smallMail = parentMail.querySelector('small');
+const contactForm = document.getElementById('contact-form');
+
 // Functions
 /**
  * Adds two numbers together.
@@ -23,6 +28,22 @@ function hideMobileMenu() {
   $mobileNav.classList.add('mobile-menu-off');
   $logoId.classList.remove('mobile-menu-off');
   $mobileHamburgerButton.classList.remove('mobile-menu-off');
+}
+
+function errorMessage(input, message) {
+  const inputParent = input.parentElement;
+  const small = inputParent.querySelector('small')
+  small.textContent = message;
+  small.classList.add('error-message');
+}
+
+function validateEmail(field) {
+  let valid = false
+  let regex = /^[a-z@.\-_]+$/
+  if(regex.test(field)){
+    valid = true;
+  }
+  return valid
 }
 
 // DOM Manipulation
@@ -241,32 +262,15 @@ $closeButtonPopup.addEventListener('click', () => {
 });
 
 // CONTACT FORM VALIDATION
-const userName = document.getElementById('name');
-const mail = document.getElementById('mail');
-const textArea = document.getElementById('message');
-const parentMail = mail.parentElement;
-const smallMail = parentMail.querySelector('small');
-
-const contactForm = document.getElementById('contact-form');
-
-function validateEmail(field) {
-  let valid = false
-  let regex = /^[a-z@.\-_]+$/
-
-  if(regex.test(field)){
-    valid = true;
-  }
-  return valid
-}
-
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   smallMail.textContent = '';
+  smallMail.classList.remove('error-message')
   if(validateEmail(mail.value)){
     contactForm.submit()
   }
   else {
-    smallMail.textContent = `Please make sure that the Email is in lowecase,
-    you write ${mail.value}`
+    errorMessage(mail, `Please make sure that the Email is in lowecase,
+    you write ${mail.value}`);
   }
 })
