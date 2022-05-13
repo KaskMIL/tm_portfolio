@@ -45,6 +45,7 @@ function errorMessage(input, message) {
 /**
  * Adds two numbers together.
  * @param {input} field the field to validate.
+ * @return {boolean} if the field is valid. 
  */
 function validateEmail(field) {
   let valid = false;
@@ -277,8 +278,7 @@ contactForm.addEventListener('submit', (e) => {
   smallMail.classList.remove('error-message');
   if (validateEmail(mail.value)) {
     contactForm.submit();
-       }
-  else {
+  } else {
     errorMessage(mail, `Please make sure that the Email is in lowecase,
     you write ${mail.value}`);
   }
