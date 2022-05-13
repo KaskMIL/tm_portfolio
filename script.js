@@ -49,7 +49,7 @@ function errorMessage(input, message) {
  */
 function validateEmail(field) {
   let valid = false;
-  const regex = /^[a-z\d@.\-_]+$/;
+  const regex = /^[A-Z\d@.\-_]+$/;
   if (regex.test(field)) {
     valid = true;
   }
@@ -119,11 +119,11 @@ const ProjectList = [
     descriptionTwo: ' no accounts or sign-ups required.',
     descriptioThree: ' has been the industrys standard',
     featureImg: 'images/ImgProj.png',
-    tecnologies: {
+    
       firstTec: 'html',
       secondTec: 'Bootstrap',
       thirdTec: 'Ruby',
-    },
+    
     liveVersion: 'https://kaskmil.github.io/tm_portfolio/',
     sourceCode: 'https://github.com/KaskMIL/tm_portfolio',
   },
@@ -235,7 +235,7 @@ articlePopup.appendChild(ul);
 articlePopup.appendChild(sectionContainerPopup);
 
 for (let i = 0; i < $allButtonsPopup.length; i += 1) {
-  $allButtonsPopup[i].addEventListener('click', () => {
+  $allButtonsPopup[1].addEventListener('click', () => {
     titlePopup.innerHTML = ProjectList[i].title;
     ul.innerHTML = `<li>${ProjectList[i].tecnologies.firstTec}</li>
                     <li>${ProjectList[i].tecnologies.secondTec}</li>
@@ -272,7 +272,7 @@ $closeButtonPopup.addEventListener('click', () => {
 });
 
 // CONTACT FORM VALIDATION
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', () => {
   e.preventDefault();
   smallMail.textContent = '';
   smallMail.classList.remove('error-message');
@@ -308,7 +308,7 @@ window.addEventListener('load', () => {
 
 const $resetForm = document.getElementById('reset-btn');
 
-$resetForm.addEventListener('click', () => {
+$resetForm.addEventListener('keydown', () => {
   localStorage.clear();
   formName.value = '';
   mail.value = '';
