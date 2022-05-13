@@ -45,7 +45,7 @@ function errorMessage(input, message) {
 /**
  * Adds two numbers together.
  * @param {input} field the field to validate.
- * @return {boolean} if the field is valid. 
+ * @return {boolean} if the field is valid.
  */
 function validateEmail(field) {
   let valid = false;
