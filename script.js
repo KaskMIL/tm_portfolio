@@ -30,20 +30,29 @@ function hideMobileMenu() {
   $mobileHamburgerButton.classList.remove('mobile-menu-off');
 }
 
+/**
+ * Adds two numbers together.
+ * @param {input} input to show the message
+ * @param {message} message message to show.
+ */
 function errorMessage(input, message) {
   const inputParent = input.parentElement;
-  const small = inputParent.querySelector('small')
+  const small = inputParent.querySelector('small');
   small.textContent = message;
   small.classList.add('error-message');
 }
 
+/**
+ * Adds two numbers together.
+ * @param {input} field the field to validate.
+ */
 function validateEmail(field) {
-  let valid = false
-  let regex = /^[a-z@.\-_]+$/
-  if(regex.test(field)){
+  let valid = false;
+  const regex = /^[a-z@.\-_]+$/;
+  if (regex.test(field)) {
     valid = true;
   }
-  return valid
+  return valid;
 }
 
 // DOM Manipulation
@@ -265,12 +274,12 @@ $closeButtonPopup.addEventListener('click', () => {
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
   smallMail.textContent = '';
-  smallMail.classList.remove('error-message')
-  if(validateEmail(mail.value)){
-    contactForm.submit()
-  }
+  smallMail.classList.remove('error-message');
+  if (validateEmail(mail.value)) {
+    contactForm.submit();
+       }
   else {
     errorMessage(mail, `Please make sure that the Email is in lowecase,
     you write ${mail.value}`);
   }
-})
+});
