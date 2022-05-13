@@ -284,7 +284,7 @@ contactForm.addEventListener('submit', (e) => {
   }
 });
 
-//LocalStorage
+// LocalStorage
 const formName = document.getElementById('name');
 const formText = document.getElementById('message');
 const submitBtn = document.getElementById('submit-btn');
@@ -294,7 +294,7 @@ submitBtn.addEventListener('click', () => {
     name: formName.value,
     email: mail.value,
     message: formText.value,
-  }
+  };
   localStorage.setItem('userData', JSON.stringify(data));
 });
 
