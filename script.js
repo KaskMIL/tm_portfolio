@@ -21,7 +21,7 @@ const contactForm = document.getElementById('contact-form');
 
 // Functions
 /**
- * Adds two numbers together.
+ * Adds and removes classes.
  */
 function hideMobileMenu() {
   $mobileNav.classList.remove('mobile-menu-on');
@@ -31,7 +31,7 @@ function hideMobileMenu() {
 }
 
 /**
- * Adds two numbers together.
+ * Adds classList.
  * @param {input} input to show the message
  * @param {message} message message to show.
  */
@@ -43,7 +43,7 @@ function errorMessage(input, message) {
 }
 
 /**
- * Adds two numbers together.
+ * Adds validate email.
  * @param {input} field the field to validate.
  * @return {boolean} if the field is valid.
  */
@@ -279,7 +279,7 @@ contactForm.addEventListener('submit', (e) => {
   if (validateEmail(mail.value)) {
     contactForm.submit();
   } else {
-    errorMessage(mail, `Please make sure that the Email is in lowecase,
-    you write ${mail.value}`);
+    errorMessage(mail, `Please make sure that in the field mail-adress,
+    every caracter is in lowecase ${mail.value}`);
   }
 });
