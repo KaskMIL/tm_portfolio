@@ -283,3 +283,17 @@ contactForm.addEventListener('submit', (e) => {
     every caracter is in lowecase ${mail.value}`);
   }
 });
+
+//LocalStorage
+const formName = document.getElementById('name');
+const formText = document.getElementById('message');
+const submitBtn = document.getElementById('submit-btn');
+
+submitBtn.addEventListener('click', () => {
+  const data = {
+    name: formName.value,
+    email: mail.value,
+    message: formText.value,
+  }
+  localStorage.setItem('userData', JSON.stringify(data));
+});
