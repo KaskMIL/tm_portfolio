@@ -49,7 +49,7 @@ function errorMessage(input, message) {
  */
 function validateEmail(field) {
   let valid = false;
-  const regex = /^[a-z@.\-_]+$/;
+  const regex = /^[a-z\d@.\-_]+$/;
   if (regex.test(field)) {
     valid = true;
   }
@@ -296,4 +296,21 @@ submitBtn.addEventListener('click', () => {
     message: formText.value,
   }
   localStorage.setItem('userData', JSON.stringify(data));
+});
+
+window.addEventListener('load', () => {
+  const myData = JSON.parse(localStorage.getItem('userData'));
+
+  formName.value = myData.name;
+  formText.value = myData.message;
+  mail.value = myData.email;
+});
+
+const $resetForm = document.getElementById('reset-btn');
+
+$resetForm.addEventListener('click', () => {
+  localStorage.clear();
+  formName.value = '';
+  mail.value = '';
+  formText.value = '';
 });
