@@ -84,11 +84,12 @@ const $worksSection = document.getElementById('works-section');
 
 const ProjectList = [
   {
-    title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no ',
-    descriptionTwo: 'accounts or sign-ups required.has been the ',
-    descriptioThree: 'industrys standard dummy text ever since the 1500s,',
-    descriptionFour: ' when an unknown printer took a standard dummy text',
+    title: 'Awsome-Books!',
+    description: 'This app create a list of books, naming author and title.',
+    descriptionTwo: ' The lis of books is created dynamicly using javascript',
+    descriptioThree: ' every time the user add a new book on the Add New Se',
+    descriptionFour: 'ction. All the methods and fuctions are separated in ',
+    descriptionFive: 'modules and imported to the index.js file.',
     featureImg: 'images/ImgProj.png',
     tecnologies: {
       firstTec: 'css',
@@ -197,7 +198,8 @@ for (let i = 0; i < ProjectList.length; i += 1) {
                     <p>${ProjectList[i].description} 
                     ${ProjectList[i].descriptionTwo}
                     ${ProjectList[i].descriptioThree} 
-                    ${ProjectList[i].descriptionFour}</p>
+                    ${ProjectList[i].descriptionFour}
+                    ${ProjectList[i].descriptionFive}</p>
                     <ul>
                         <li>${ProjectList[i].tecnologies.firstTec}</li>
                         <li>${ProjectList[i].tecnologies.secondTec}</li>
